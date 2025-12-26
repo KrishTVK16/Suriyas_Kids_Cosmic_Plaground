@@ -28,6 +28,15 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 0.5rem;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 body::before {
@@ -207,6 +216,17 @@ p {
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.neo-card h4,
+.neo-card p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .neo-card:hover {
@@ -348,6 +368,20 @@ p {
     animation: slideIn 1s ease;
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hero-buttons .btn-cosmic {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+}
+
 .hero h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
@@ -401,12 +435,239 @@ p {
     transform: translateY(-1px);
 }
 
+/* ===== Social Login Styles ===== */
+.social-login-section {
+    width: 100%;
+}
+
+.divider {
+    position: relative;
+    text-align: center;
+    color: rgba(248, 250, 252, 0.8);
+    font-size: 0.9rem;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.social-buttons-row {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.btn-social {
+    flex: 1;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    color: var(--starlight-white);
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+    min-height: 44px;
+}
+
+.btn-social svg {
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.btn-social span {
+    white-space: nowrap;
+    display: inline-block;
+    color: var(--starlight-white);
+    opacity: 1;
+}
+
+.btn-social:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-social:hover svg {
+    transform: scale(1.1);
+}
+
+.btn-social:active {
+    transform: translateY(0);
+}
+
+.btn-social:focus {
+    outline: 2px solid var(--turquoise);
+    outline-offset: 2px;
+}
+
+.btn-google {
+    background: rgba(66, 133, 244, 0.1);
+    border-color: rgba(66, 133, 244, 0.3);
+}
+
+.btn-google:hover {
+    background: rgba(66, 133, 244, 0.2);
+    border-color: rgba(66, 133, 244, 0.5);
+    box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+}
+
+.btn-facebook {
+    background: rgba(24, 119, 242, 0.1);
+    border-color: rgba(24, 119, 242, 0.3);
+}
+
+.btn-facebook:hover {
+    background: rgba(24, 119, 242, 0.2);
+    border-color: rgba(24, 119, 242, 0.5);
+    box-shadow: 0 4px 12px rgba(24, 119, 242, 0.3);
+}
+
+.btn-apple {
+    background: rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-apple:hover {
+    background: rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive adjustments for social buttons */
+@media (max-width: 580px) {
+    .social-login-section {
+        width: 100%;
+        margin-top: 1.5rem !important;
+    }
+
+    .divider {
+        font-size: 0.85rem;
+        color: rgba(248, 250, 252, 0.8);
+        margin-bottom: 1rem !important;
+    }
+
+    .divider span {
+        display: inline-block;
+        padding: 0 0.5rem;
+        background: transparent;
+        position: relative;
+        z-index: 1;
+    }
+
+    .divider::before,
+    .divider::after {
+        width: 30%;
+    }
+
+    .social-buttons-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+    
+    .btn-social {
+        flex: 1;
+        min-width: 100px;
+        max-width: 140px;
+        width: auto;
+        padding: 0.7rem 0.75rem;
+        font-size: 0.8rem;
+        min-height: 44px;
+        position: relative;
+        z-index: 10;
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+        gap: 0.4rem;
+    }
+    
+    .btn-social span {
+        display: inline-block !important;
+        white-space: nowrap;
+        font-size: 0.8rem;
+        color: var(--starlight-white);
+        opacity: 1;
+    }
+    
+    .btn-social {
+        justify-content: center;
+    }
+
+    .btn-social svg {
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-buttons-row {
+        flex-direction: column;
+    }
+    
+    .btn-social {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        padding: 0.75rem 1rem;
+        gap: 0.5rem;
+    }
+    
+    .btn-social span {
+        display: inline-block !important;
+        white-space: nowrap;
+        font-size: 0.85rem;
+        color: var(--starlight-white);
+        opacity: 1;
+    }
+    
+    .btn-social {
+        justify-content: center;
+    }
+
+    .btn-social svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
 /* ===== Grid Layouts ===== */
 .content-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: 2rem;
     padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .card {
@@ -419,6 +680,9 @@ p {
     animation: slideIn 0.6s ease;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
 }
 
 .card:hover {
@@ -610,6 +874,19 @@ p {
     }
 }
 
+@media (max-width: 580px) {
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
+    }
+
+    .hero-buttons .btn-cosmic {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
 @media (max-width: 480px) {
     .hero {
         min-height: 60vh;
@@ -623,6 +900,17 @@ p {
     .btn-cosmic {
         padding: 0.75rem 1.5rem;
         font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
+    }
+
+    .hero-buttons .btn-cosmic {
+        width: 100%;
+        max-width: 280px;
     }
 }
 
@@ -965,6 +1253,126 @@ p {
     text-decoration: underline;
 }
 
+/* Auth link styles for better touch targets */
+.auth-link-container {
+    position: relative;
+    z-index: 10;
+}
+
+.auth-link {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    margin: 0 0.25rem;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(6, 182, 212, 0.3);
+}
+
+.auth-link:hover,
+.auth-link:focus {
+    color: var(--neon-pink) !important;
+    text-decoration: underline;
+    outline: 2px solid var(--turquoise);
+    outline-offset: 2px;
+}
+
+/* Fix text visibility and layout below 580px */
+@media (max-width: 580px) {
+    .auth-page-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .form-container {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .form-container h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: var(--starlight-white) !important;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        opacity: 1;
+    }
+
+    .form-group label {
+        font-size: 0.95rem;
+        color: var(--starlight-white) !important;
+        opacity: 1;
+        font-weight: 500;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-control {
+        font-size: 1rem;
+        color: var(--starlight-white) !important;
+        background: rgba(255, 255, 255, 0.15) !important;
+    }
+
+    .form-control::placeholder {
+        color: rgba(248, 250, 252, 0.7) !important;
+        opacity: 1;
+    }
+
+    .form-control:focus {
+        color: var(--starlight-white) !important;
+        background: rgba(255, 255, 255, 0.2) !important;
+    }
+
+    .remember-forgot-container {
+        font-size: 0.9rem;
+        color: var(--starlight-white);
+    }
+
+    .remember-forgot-container .remember-me {
+        color: var(--starlight-white) !important;
+        opacity: 1;
+    }
+
+    .remember-forgot-container .remember-me input[type="checkbox"] {
+        opacity: 1;
+    }
+
+    .forgot-password-link {
+        color: var(--turquoise) !important;
+        opacity: 1;
+        font-weight: 500;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .auth-link-container {
+        font-size: 0.95rem;
+        color: var(--starlight-white) !important;
+        line-height: 1.6;
+        opacity: 1;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .auth-link {
+        color: var(--turquoise) !important;
+        font-weight: 500;
+        opacity: 1;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-cosmic {
+        font-size: 1rem;
+        font-weight: 600;
+        color: white !important;
+    }
+
+    .divider {
+        color: rgba(248, 250, 252, 0.9) !important;
+        opacity: 1;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .divider span {
+        color: rgba(248, 250, 252, 0.9) !important;
+        opacity: 1;
+    }
+}
+
 /* Stack vertically and center when wrapped */
 @media (max-width: 480px) {
     .remember-forgot-container {
@@ -977,6 +1385,163 @@ p {
         width: 100%;
         justify-content: center;
     }
+
+    .form-container h2 {
+        font-size: 1.75rem;
+    }
+
+    .auth-link-container {
+        font-size: 0.9rem;
+    }
+}
+
+/* Fix for very small screens (less than 370px) */
+@media (max-width: 370px) {
+    .auth-page-container {
+        padding: 1rem 0.5rem;
+        min-height: 100vh;
+        overflow-x: hidden;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form-container {
+        padding: 1.5rem 1rem;
+        margin: 1rem auto;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .form-container form {
+        width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .form-container h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .form-control {
+        padding: 0.6rem 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .btn-cosmic {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.95rem;
+    }
+
+    .social-login-section {
+        margin-top: 1rem !important;
+        width: 100%;
+    }
+
+    .divider {
+        font-size: 0.8rem;
+        margin-bottom: 0.75rem !important;
+        color: rgba(248, 250, 252, 0.8);
+    }
+
+    .divider span {
+        display: inline-block;
+        padding: 0 0.5rem;
+        background: transparent;
+        position: relative;
+        z-index: 1;
+    }
+
+    .divider::before,
+    .divider::after {
+        width: 35%;
+    }
+
+    .social-buttons-row {
+        gap: 0.5rem;
+        flex-direction: column;
+    }
+
+    .btn-social {
+        padding: 0.6rem 0.75rem;
+        font-size: 0.85rem;
+        min-width: 100%;
+        width: 100%;
+        max-width: 100%;
+        min-height: 44px;
+        position: relative;
+        z-index: 10;
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+        gap: 0.5rem;
+    }
+
+    .btn-social span {
+        display: inline-block !important;
+        white-space: nowrap;
+        font-size: 0.8rem;
+        color: var(--starlight-white);
+        opacity: 1;
+    }
+
+    .btn-social svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Ensure links are visible and clickable */
+    .auth-link-container {
+        font-size: 0.9rem;
+        margin-top: 1rem !important;
+        padding: 0 0.5rem;
+        line-height: 1.6;
+        position: relative;
+        z-index: 10;
+    }
+
+    .auth-link {
+        display: inline-block;
+        padding: 0.25rem 0.5rem;
+        margin: 0 0.25rem;
+        word-break: break-word;
+        text-decoration: underline;
+        min-height: 44px;
+        line-height: 44px;
+        position: relative;
+        z-index: 10;
+        touch-action: manipulation;
+    }
+
+    .auth-link:hover,
+    .auth-link:focus {
+        color: var(--neon-pink) !important;
+        text-decoration: underline;
+        outline: 2px solid var(--turquoise);
+        outline-offset: 2px;
+    }
+
+    .remember-forgot-container {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: flex-start;
+    }
+
+    .remember-forgot-container .remember-me,
+    .remember-forgot-container .forgot-password-link {
+        width: 100%;
+        justify-content: flex-start;
+        font-size: 0.85rem;
+    }
+
+    .forgot-password-link {
+        font-size: 0.85rem;
+    }
 }
 
 
@@ -987,13 +1552,29 @@ p {
     border-radius: 30px;
     margin: 2rem 0;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.kids-corner-hero h1 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.kids-corner-hero p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .submission-showcase {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 2rem;
     margin: 2rem 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .submission-card {
@@ -1005,6 +1586,10 @@ p {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .submission-card::before {
@@ -1048,6 +1633,25 @@ p {
     padding: 3rem 2rem;
     text-align: center;
     margin: 3rem 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.kids-cta-section > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.kids-cta-section .btn-cosmic {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .kids-cta-section h3 {
@@ -1099,21 +1703,162 @@ p {
 
     .kids-corner-hero {
         padding: 2rem 1rem;
+        margin: 1rem 0;
+    }
+
+    .kids-corner-hero h1 {
+        font-size: 2rem;
+    }
+
+    .kids-corner-hero p {
+        font-size: 1.1rem;
+    }
+
+    .submission-showcase {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0;
+        min-width: 0;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 1.5rem;
     }
 
     .submission-showcase {
         grid-template-columns: 1fr;
     }
+
+    .kids-cta-section {
+        padding: 2rem 1.5rem;
+        margin: 2rem 0;
+    }
+
+    .kids-cta-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .kids-cta-section p {
+        font-size: 1rem;
+    }
+
+    .kids-cta-section > div {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .kids-cta-section .btn-cosmic {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Additional fixes for very small screens */
+@media (max-width: 580px) {
+    .kids-corner-hero {
+        padding: 1.5rem 1rem;
+        margin: 1rem 0;
+    }
+
+    .kids-corner-hero h1 {
+        font-size: 1.75rem;
+        line-height: 1.2;
+    }
+
+    .kids-corner-hero p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .content-grid {
+        padding: 0.75rem;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        min-width: 0;
+    }
+
+    .submission-showcase {
+        grid-template-columns: 1fr;
+        min-width: 0;
+    }
+
+    .neo-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .neo-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .neo-card p {
+        font-size: 0.9rem;
+    }
+
+    .submission-showcase {
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .submission-card {
+        padding: 1rem;
+    }
+
+    .kids-cta-section {
+        padding: 1.5rem 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .kids-cta-section h3 {
+        font-size: 1.25rem;
+        line-height: 1.3;
+    }
+
+    .kids-cta-section p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 370px) {
+    .kids-corner-hero {
+        padding: 1rem 0.75rem;
+    }
+
+    .kids-corner-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .content-grid {
+        padding: 0.5rem;
+        gap: 0.75rem;
+    }
+
+    .neo-card {
+        padding: 1rem 0.75rem;
+    }
+
+    .neo-card div {
+        font-size: 2rem;
+    }
+
+    .submission-card {
+        padding: 0.75rem;
+    }
+
+    .kids-cta-section {
+        padding: 1rem 0.75rem;
+    }
+
+    .kids-cta-section h3 {
+        font-size: 1.1rem;
+    }
 }
 
 /* ===== Content Grid Alignment Fixes ===== */
-.content-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-    align-items: start;
-}
+/* Note: .content-grid base styles are defined above with responsive minmax */
+/* Additional alignment properties for cards */
 
 /* Ensure cards have consistent heights */
 .content-grid .card,
@@ -1142,4 +1887,31 @@ p {
 .card .btn-cosmic,
 .glass-card .btn-cosmic {
     margin-top: auto;
+}
+
+/* Ensure all sections are visible and don't overflow */
+section.container {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+section.container > * {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Fix for glass-card inside sections */
+section.container .glass-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
