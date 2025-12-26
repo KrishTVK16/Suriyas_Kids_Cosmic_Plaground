@@ -29,7 +29,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="index.html">🏠 Welcome Hub</a></li>
+                            <li><a class="dropdown-item" href="home2.html">🚀 Discovery More</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="stories.html">Stories</a></li>
                     <li class="nav-item"><a class="nav-link" href="learning.html">Learning</a></li>
                     <li class="nav-item"><a class="nav-link" href="arts.html">Arts & Crafts</a></li>
@@ -45,19 +51,19 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero parallax-section" style="min-height: 50vh;">
+    <section class="page-hero parallax-section">
         <div class="parallax-bg"></div>
-        <div class="hero-content">
-            <h1 class="glow-text">Subscribe</h1>
-            <p style="font-size: 1.3rem;">Get the latest updates and fun content delivered to your inbox!</p>
+        <div class="page-hero-content">
+            <h1>Subscribe</h1>
+            <p>Get the latest updates and fun content delivered to your inbox! Never miss out on new stories, activities, and educational content.</p>
         </div>
     </section>
 
     <!-- Subscription Form -->
-    <section class="container mt-5 mb-5" style="position: relative; z-index: 10;">
+    <section class="container mt-5 mb-5 enhanced-section" style="position: relative; z-index: 10;">
         <div class="form-container glass">
-            <h2 class="text-center mb-4">Join Our Newsletter</h2>
-            <p class="text-center mb-4">Subscribe to receive amazing stories, fun activities, and educational content!
+            <h2 class="text-center mb-4" style="font-size: 2.5rem;">Join Our Newsletter</h2>
+            <p class="text-center mb-4" style="font-size: 1.2rem;">Subscribe to receive amazing stories, fun activities, and educational content!
             </p>
             <form id="subscribe-form">
                 <div class="form-group">
