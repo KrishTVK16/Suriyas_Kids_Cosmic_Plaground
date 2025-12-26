@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#1e1b4b"/>
+  <!-- Colorful planet -->
+  <circle cx="200" cy="150" r="80" fill="#ec4899" opacity="0.3"/>
+  <circle cx="200" cy="150" r="80" fill="url(#rainbow)"/>
+  <defs>
+    <linearGradient id="rainbow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:0.8" />
+      <stop offset="20%" style="stop-color:#ffcc00;stop-opacity:0.8" />
+      <stop offset="40%" style="stop-color:#06b6d4;stop-opacity:0.8" />
+      <stop offset="60%" style="stop-color:#6b46c1;stop-opacity:0.8" />
+      <stop offset="80%" style="stop-color:#ec4899;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  <!-- Music notes -->
+  <text x="230" y="100" font-family="Arial" font-size="30" fill="#ffffff">♪</text>
+  <text x="250" y="180" font-family="Arial" font-size="25" fill="#ffffff">♫</text>
+  <text x="140" y="120" font-family="Arial" font-size="28" fill="#ffffff">♪</text>
+  <text x="160" y="200" font-family="Arial" font-size="26" fill="#ffffff">♫</text>
+  <!-- Stars -->
+  <circle cx="50" cy="50" r="2" fill="#ffcc00"/>
+  <circle cx="350" cy="60" r="2.5" fill="#06b6d4"/>
+  <circle cx="100" cy="250" r="2" fill="#ffffff"/>
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">Planet of Colors</text>
+</svg>

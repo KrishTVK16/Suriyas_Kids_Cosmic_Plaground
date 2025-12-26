@@ -1,0 +1,34 @@
+{
+  "puzzles": [
+    {
+      "id": "puzzle1",
+      "title": "Space Word Search",
+      "description": "Find all the space-related words hidden in the grid!"
+    },
+    {
+      "id": "puzzle2",
+      "title": "Planet Matching Game",
+      "description": "Match planets with their descriptions!"
+    },
+    {
+      "id": "puzzle3",
+      "title": "Cosmic Crossword",
+      "description": "Solve the crossword puzzle with space-themed clues!"
+    },
+    {
+      "id": "puzzle4",
+      "title": "Star Pattern Puzzle",
+      "description": "Complete the star patterns by connecting the dots!"
+    },
+    {
+      "id": "puzzle5",
+      "title": "Rocket Maze",
+      "description": "Help the rocket navigate through the asteroid field!"
+    },
+    {
+      "id": "puzzle6",
+      "title": "Animal Memory Game",
+      "description": "Match pairs of animals in this fun memory game!"
+    }
+  ]
+}

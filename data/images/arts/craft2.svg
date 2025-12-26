@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#f5f5dc"/>
+  <!-- String -->
+  <line x1="200" y1="20" x2="200" y2="60" stroke="#8b4513" stroke-width="2"/>
+  <!-- Star mobile -->
+  <g>
+    <line x1="200" y1="60" x2="120" y2="120" stroke="#d3d3d3" stroke-width="1"/>
+    <path d="M 120,100 L 125,115 L 140,115 L 130,125 L 135,140 L 120,130 L 105,140 L 110,125 L 100,115 L 115,115 Z" fill="#ffcc00" stroke="#ff6b35" stroke-width="1.5"/>
+  </g>
+  <g>
+    <line x1="200" y1="60" x2="200" y2="150" stroke="#d3d3d3" stroke-width="1"/>
+    <path d="M 200,130 L 205,145 L 220,145 L 210,155 L 215,170 L 200,160 L 185,170 L 190,155 L 180,145 L 195,145 Z" fill="#ec4899" stroke="#6b46c1" stroke-width="1.5"/>
+  </g>
+  <g>
+    <line x1="200" y1="60" x2="280" y2="110" stroke="#d3d3d3" stroke-width="1"/>
+    <path d="M 280,90 L 285,105 L 300,105 L 290,115 L 295,130 L 280,120 L 265,130 L 270,115 L 260,105 L 275,105 Z" fill="#06b6d4" stroke="#0a0e27" stroke-width="1.5"/>
+  </g>
+  <g>
+    <line x1="200" y1="60" x2="150" y2="200" stroke="#d3d3d3" stroke-width="1"/>
+    <path d="M 150,180 L 155,195 L 170,195 L 160,205 L 165,220 L 150,210 L 135,220 L 140,205 L 130,195 L 145,195 Z" fill="#9370db" stroke="#ec4899" stroke-width="1.5"/>
+  </g>
+  <g>
+    <line x1="200" y1="60" x2="250" y2="210" stroke="#d3d3d3" stroke-width="1"/>
+    <path d="M 250,190 L 255,205 L 270,205 L 260,215 L 265,230 L 250,220 L 235,230 L 240,215 L 230,205 L 245,205 Z" fill="#ff6b35" stroke="#ffcc00" stroke-width="1.5"/>
+  </g>
+  <text x="200" y="285" font-family="Arial, sans-serif" font-size="20" fill="#0a0e27" text-anchor="middle" font-weight="bold">Star Mobile Craft</text>
+</svg>

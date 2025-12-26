@@ -1,0 +1,84 @@
+{
+  "tutorials": [
+    {
+      "id": "tutorial1",
+      "title": "Make Your Own Rocket",
+      "description": "Learn how to create a colorful paper rocket that can fly! This fun craft teaches you about rockets and space travel. Perfect for ages 6-10.",
+      "image": "https://images.unsplash.com/photo-1581822261290-991b38693d1b?w=400&h=300&fit=crop&q=80",
+      "difficulty": "Easy",
+      "time": "30 minutes",
+      "materials": "Paper, scissors, glue, markers",
+      "ageRange": "6-10 years"
+    },
+    {
+      "id": "tutorial2",
+      "title": "Star Mobile Craft",
+      "description": "Create a beautiful star mobile to hang in your room! Learn about constellations while making this decorative craft. Great for bedroom decoration!",
+      "image": "https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?w=400&h=300&fit=crop&q=80",
+      "difficulty": "Medium",
+      "time": "45 minutes",
+      "materials": "Cardboard, string, paint, glitter",
+      "ageRange": "7-12 years"
+    },
+    {
+      "id": "tutorial3",
+      "title": "Planet Painting",
+      "description": "Paint your own solar system with fun colors and techniques! Learn about all 8 planets while creating beautiful art. Perfect for learning and creativity!",
+      "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=400&h=300&fit=crop&q=80",
+      "difficulty": "Easy",
+      "time": "1 hour",
+      "materials": "Canvas, acrylic paints, brushes",
+      "ageRange": "6-12 years"
+    },
+    {
+      "id": "tutorial4",
+      "title": "Cosmic Slime",
+      "description": "Make sparkly cosmic slime with glitter and colors! A fun sensory activity that's safe and easy to make. Kids love playing with this stretchy, sparkly slime!",
+      "image": "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=400&h=300&fit=crop&q=80",
+      "difficulty": "Easy",
+      "time": "20 minutes",
+      "materials": "Glue, borax, water, glitter, food coloring",
+      "ageRange": "6-12 years"
+    },
+    {
+      "id": "tutorial5",
+      "title": "Alien Mask",
+      "description": "Create your own friendly alien mask with paper and colors! Perfect for imaginative play and space-themed parties. Let your creativity shine!",
+      "image": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=300&fit=crop&q=80",
+      "difficulty": "Easy",
+      "time": "25 minutes",
+      "materials": "Paper plates, markers, string, glue",
+      "ageRange": "5-10 years"
+    },
+    {
+      "id": "tutorial6",
+      "title": "Constellation Cards",
+      "description": "Make beautiful constellation cards to learn about stars! Create your own set of educational cards showing different constellations in the night sky.",
+      "image": "https://images.unsplash.com/photo-1519810755548-39cd217da494?w=400&h=300&fit=crop&q=80",
+      "difficulty": "Medium",
+      "time": "1 hour",
+      "materials": "Cardstock, glow-in-the-dark paint, markers",
+      "ageRange": "8-12 years"
+    },
+    {
+      "id": "tutorial7",
+      "title": "Moon Phase Calendar",
+      "description": "Create a calendar that shows the phases of the moon! Learn about how the moon changes throughout the month with this educational craft.",
+      "image": "https://images.unsplash.com/photo-1532693322450-2cb5c511067d?w=400&h=300&fit=crop&q=80",
+      "difficulty": "Medium",
+      "time": "1.5 hours",
+      "materials": "Poster board, markers, stickers",
+      "ageRange": "7-12 years"
+    },
+    {
+      "id": "tutorial8",
+      "title": "Space Diorama",
+      "description": "Build a 3D space scene in a shoebox! Create planets, stars, and rockets in your own mini universe. Great for school projects!",
+      "image": "https://images.unsplash.com/photo-1614314107768-6018061b5b72?w=400&h=300&fit=crop&q=80",
+      "difficulty": "Hard",
+      "time": "2 hours",
+      "materials": "Shoebox, paint, clay, string, LED lights",
+      "ageRange": "9-12 years"
+    }
+  ]
+}

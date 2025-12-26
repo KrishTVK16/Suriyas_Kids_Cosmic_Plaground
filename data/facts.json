@@ -1,0 +1,53 @@
+{
+  "facts": [
+    {
+      "title": "Amazing Space Fact",
+      "content": "A day on Venus is longer than its year! Venus rotates so slowly that it takes longer to complete one rotation than to orbit the Sun. This means if you lived on Venus, your birthday would come before your day was over!"
+    },
+    {
+      "title": "Cool Animal Fact",
+      "content": "Dolphins have names for each other! They use unique whistles to identify themselves and call each other. Scientists have discovered that dolphins remember each other's 'names' for over 20 years!"
+    },
+    {
+      "title": "Fun Science Fact",
+      "content": "Honey never spoils! Archaeologists have found 3000-year-old honey in Egyptian tombs that was still edible. This is because honey has natural preservatives that prevent bacteria from growing."
+    },
+    {
+      "title": "Amazing Nature Fact",
+      "content": "Trees can communicate with each other! They share nutrients and information through underground fungal networks called 'mycorrhizal networks'. When one tree is sick, others send it food!"
+    },
+    {
+      "title": "Cool Space Fact",
+      "content": "There are more stars in the universe than grains of sand on all the beaches on Earth! Scientists estimate there are about 100 billion galaxies, each with billions of stars. That's a lot of stars!"
+    },
+    {
+      "title": "Fun Animal Fact",
+      "content": "Octopuses have three hearts and blue blood! Two hearts pump blood to the gills, and one pumps blood to the rest of the body. Their blue blood comes from copper instead of iron like humans."
+    },
+    {
+      "title": "Incredible Planet Fact",
+      "content": "Jupiter is so big that all the other planets in our solar system could fit inside it! It's a gas giant made mostly of hydrogen and helium, and it has a Great Red Spot that's a storm bigger than Earth!"
+    },
+    {
+      "title": "Amazing Ocean Fact",
+      "content": "We've explored less than 5% of the ocean! There are more things we don't know about the deep ocean than things we do know. Scientists discover new species almost every time they explore!"
+    },
+    {
+      "title": "Cool Dinosaur Fact",
+      "content": "Birds are actually dinosaurs! Modern birds evolved from small feathered dinosaurs millions of years ago. So when you see a chicken, you're looking at a distant relative of the T-Rex!"
+    },
+    {
+      "title": "Fun Plant Fact",
+      "content": "Some plants can 'hear'! Studies show that plants respond to the sound of water and can even 'hear' when caterpillars are eating their leaves. They then produce chemicals to protect themselves!"
+    },
+    {
+      "title": "Amazing Weather Fact",
+      "content": "Lightning strikes the Earth about 100 times every second! That's over 8 million times a day. Lightning is hotter than the surface of the Sun, reaching temperatures of 30,000 degrees Celsius!"
+    },
+    {
+      "title": "Cool Human Body Fact",
+      "content": "Your brain uses about 20% of your body's energy even though it's only 2% of your body weight! Your brain is always working, even when you're sleeping, processing information and storing memories."
+    }
+  ]
+}
+

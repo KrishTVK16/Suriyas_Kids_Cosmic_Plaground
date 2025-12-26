@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#c8e6c9"/>
+  <!-- Bamboo -->
+  <rect x="320" y="80" width="15" height="180" fill="#6b8e23" rx="7"/>
+  <rect x="350" y="100" width="15" height="160" fill="#6b8e23" rx="7"/>
+  <ellipse cx="327" cy="120" rx="20" ry="8" fill="#228b22" opacity="0.6"/>
+  <ellipse cx="327" cy="160" rx="20" ry="8" fill="#228b22" opacity="0.6"/>
+  <ellipse cx="357" cy="140" rx="20" ry="8" fill="#228b22" opacity="0.6"/>
+  <!-- Panda body -->
+  <ellipse cx="180" cy="180" rx="65" ry="55" fill="#ffffff"/>
+  <!-- Panda head -->
+  <circle cx="180" cy="120" r="50" fill="#ffffff"/>
+  <!-- Ears -->
+  <circle cx="155" cy="90" r="20" fill="#0a0e27"/>
+  <circle cx="205" cy="90" r="20" fill="#0a0e27"/>
+  <!-- Eye patches -->
+  <ellipse cx="165" cy="115" rx="18" ry="22" fill="#0a0e27"/>
+  <ellipse cx="195" cy="115" rx="18" ry="22" fill="#0a0e27"/>
+  <!-- Eyes -->
+  <circle cx="165" cy="115" r="8" fill="#ffffff"/>
+  <circle cx="195" cy="115" r="8" fill="#ffffff"/>
+  <circle cx="167" cy="113" r="4" fill="#0a0e27"/>
+  <circle cx="197" cy="113" r="4" fill="#0a0e27"/>
+  <!-- Nose -->
+  <ellipse cx="180" cy="135" rx="8" ry="6" fill="#0a0e27"/>
+  <!-- Arms -->
+  <ellipse cx="135" cy="180" rx="25" ry="45" fill="#0a0e27" transform="rotate(30 135 180)"/>
+  <ellipse cx="225" cy="180" rx="25" ry="45" fill="#0a0e27" transform="rotate(-30 225 180)"/>
+  <!-- Legs -->
+  <ellipse cx="155" cy="220" rx="28" ry="35" fill="#0a0e27"/>
+  <ellipse cx="205" cy="220" rx="28" ry="35" fill="#0a0e27"/>
+  <!-- Bamboo in hand -->
+  <rect x="125" y="160" width="8" height="50" fill="#6b8e23" rx="4" transform="rotate(-20 129 185)"/>
+  <text x="200" y="290" font-family="Arial, sans-serif" font-size="22" fill="#0a0e27" text-anchor="middle" font-weight="bold">Panda</text>
+</svg>

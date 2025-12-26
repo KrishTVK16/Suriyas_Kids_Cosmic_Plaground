@@ -1,0 +1,1145 @@
+/* Cosmic Playground Theme - Kids Magazine Website */
+
+/* ===== CSS Variables ===== */
+:root {
+    --midnight-blue: #0a0e27;
+    --nebula-purple: #6b46c1;
+    --starlight-white: #f8fafc;
+    --neon-pink: #ec4899;
+    --turquoise: #06b6d4;
+    --cosmic-gradient: linear-gradient(135deg, #0a0e27 0%, #1e1b4b 50%, #312e81 100%);
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --shadow-soft: 8px 8px 16px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.1);
+    --shadow-inset: inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* ===== Reset & Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    background: var(--cosmic-gradient);
+    color: var(--starlight-white);
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(236, 72, 153, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(6, 182, 212, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(107, 70, 193, 0.2) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ===== Typography ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Baloo 2', 'Fredoka One', cursive;
+    font-weight: 700;
+    color: var(--starlight-white);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgba(248, 250, 252, 0.9);
+}
+
+/* ===== Floating Animations ===== */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+}
+
+@keyframes glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgba(236, 72, 153, 0.8), 0 0 60px rgba(6, 182, 212, 0.5);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Cosmic Elements ===== */
+.star {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 2s infinite;
+}
+
+.planet {
+    position: absolute;
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.rocket {
+    position: absolute;
+    font-size: 2rem;
+    animation: float 4s ease-in-out infinite;
+}
+
+.comet {
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background: linear-gradient(to bottom, var(--turquoise), transparent);
+    animation: float 3s ease-in-out infinite;
+}
+
+/* ===== Glassmorphism ===== */
+.glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.glass-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Push buttons and links to bottom of glass-card */
+.glass-card .btn-cosmic,
+.glass-card a.btn-cosmic {
+    margin-top: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+/* ===== Neomorphism ===== */
+.neo-card {
+    background: var(--midnight-blue);
+    border-radius: 20px;
+    box-shadow: var(--shadow-soft);
+    padding: 2rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.neo-card:hover {
+    box-shadow: var(--shadow-inset);
+    transform: scale(1.02);
+}
+
+/* Push buttons to bottom of neo-card */
+.neo-card .btn-cosmic,
+.neo-card .neo-button {
+    margin-top: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.neo-button {
+    background: var(--midnight-blue);
+    border: none;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    color: var(--starlight-white);
+    font-weight: 600;
+    box-shadow: var(--shadow-soft);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.neo-button:hover {
+    box-shadow: var(--shadow-inset);
+    transform: translateY(-2px);
+}
+
+.neo-button:active {
+    box-shadow: var(--shadow-inset);
+    transform: translateY(0);
+}
+
+/* ===== Navigation ===== */
+.navbar {
+    background: var(--glass-bg);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-family: 'Fredoka One', cursive;
+    color: var(--neon-pink) !important;
+    text-shadow: 0 0 20px rgba(236, 72, 153, 0.8);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.navbar-brand .logo-icon {
+    font-size: 3rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.navbar-brand .logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.1;
+}
+
+.navbar-brand .logo-line1 {
+    font-size: 1.4rem;
+    display: block;
+}
+
+.navbar-brand .logo-line2 {
+    font-size: 1rem;
+    display: block;
+}
+
+.nav-link {
+    color: var(--starlight-white) !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--turquoise);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: var(--turquoise) !important;
+    text-shadow: 0 0 10px rgba(6, 182, 212, 0.6);
+}
+
+.navbar-toggler {
+    border: 1px solid var(--glass-border);
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28248, 250, 252, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 4rem 2rem;
+    overflow: hidden;
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 10;
+    animation: slideIn 1s ease;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--neon-pink), var(--turquoise));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: glow 3s ease-in-out infinite;
+}
+
+/* ===== Buttons ===== */
+.btn-cosmic {
+    background: linear-gradient(135deg, var(--neon-pink), var(--turquoise));
+    border: none;
+    border-radius: 30px;
+    padding: 1rem 2.5rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(236, 72, 153, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-cosmic::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn-cosmic:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.btn-cosmic:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(236, 72, 153, 0.6);
+}
+
+.btn-cosmic:active {
+    transform: translateY(-1px);
+}
+
+/* ===== Grid Layouts ===== */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    animation: slideIn 0.6s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    border-color: var(--turquoise);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    min-height: 200px;
+    background: linear-gradient(135deg, var(--nebula-purple), var(--neon-pink));
+    display: block;
+    object-fit: cover;
+}
+
+.card img:before {
+    content: '🌟';
+    display: block;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, var(--nebula-purple), var(--neon-pink));
+    border-radius: 15px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 3rem;
+}
+
+.card-title {
+    color: var(--neon-pink);
+    margin-bottom: 0.5rem;
+}
+
+/* Push buttons and links to bottom of card */
+.card .btn-cosmic,
+.card a.btn-cosmic {
+    margin-top: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+/* ===== Forms ===== */
+.form-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    color: var(--starlight-white);
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--turquoise);
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.form-control::placeholder {
+    color: rgba(248, 250, 252, 0.5);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--starlight-white);
+    font-weight: 500;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: var(--turquoise);
+}
+
+/* ===== Loading Spinner ===== */
+.loader {
+    border: 4px solid var(--glass-border);
+    border-top: 4px solid var(--turquoise);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 2rem auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ===== Footer ===== */
+.footer {
+    background: var(--midnight-blue);
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+    border-top: 1px solid var(--glass-border);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+    color: var(--neon-pink);
+    margin-bottom: 1rem;
+}
+
+.footer-section a {
+    color: var(--starlight-white);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--turquoise);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--glass-border);
+    color: rgba(248, 250, 252, 0.7);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .navbar-brand .logo-icon {
+        font-size: 2rem;
+    }
+
+    .navbar-brand .logo-line1 {
+        font-size: 1.1rem;
+    }
+
+    .navbar-brand .logo-line2 {
+        font-size: 0.85rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 60vh;
+        padding: 2rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .btn-cosmic {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* ===== Parallax Effect ===== */
+.parallax-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-bg {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image:
+        radial-gradient(circle at 25% 25%, rgba(236, 72, 153, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(6, 182, 212, 0.2) 0%, transparent 50%);
+    animation: float 20s ease-in-out infinite;
+}
+
+/* ===== Quiz Styles ===== */
+.quiz-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.quiz-question {
+    margin-bottom: 2rem;
+}
+
+.quiz-options {
+    display: grid;
+    gap: 1rem;
+}
+
+.quiz-option {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--glass-border);
+    border-radius: 15px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quiz-option:hover {
+    border-color: var(--turquoise);
+    transform: translateX(10px);
+    background: rgba(6, 182, 212, 0.1);
+}
+
+.quiz-option.selected {
+    border-color: var(--neon-pink);
+    background: rgba(236, 72, 153, 0.2);
+}
+
+/* ===== Video Gallery ===== */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.video-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ===== Utility Classes ===== */
+.text-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.glow-text {
+    text-shadow: 0 0 20px rgba(236, 72, 153, 0.8);
+}
+
+.fade-in {
+    animation: slideIn 0.6s ease;
+}
+
+/* ===== Navigation Buttons (Login/Register) ===== */
+.nav-btn-login,
+.nav-btn-register {
+    padding: 0.6rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.nav-btn-login {
+    background: transparent;
+    border: 2px solid var(--turquoise);
+    color: var(--turquoise) !important;
+}
+
+.nav-btn-login:hover {
+    background: var(--turquoise);
+    color: var(--midnight-blue) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4);
+}
+
+.nav-btn-register {
+    background: linear-gradient(135deg, var(--neon-pink), var(--turquoise));
+    border: none;
+    color: white !important;
+}
+
+.nav-btn-register:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(236, 72, 153, 0.5);
+}
+
+/* ===== Footer Enhancements ===== */
+.footer-logo {
+    font-family: 'Fredoka One', cursive;
+    color: var(--neon-pink);
+    text-shadow: 0 0 15px rgba(236, 72, 153, 0.6);
+    margin-bottom: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.footer-logo .logo-icon {
+    font-size: 2.5rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.footer-logo .logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.1;
+}
+
+.footer-logo .logo-line1 {
+    font-size: 1.65rem;
+    display: block;
+}
+
+.footer-logo .logo-line2 {
+    font-size: 1.3rem;
+    display: block;
+}
+
+.social-links {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    color: var(--starlight-white);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: relative;
+}
+
+.social-links a svg {
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px) scale(1.1);
+    background: linear-gradient(135deg, var(--neon-pink), var(--turquoise));
+    border-color: var(--neon-pink);
+    box-shadow: 0 5px 15px rgba(236, 72, 153, 0.5);
+}
+
+.social-links a:hover svg {
+    transform: scale(1.1);
+}
+
+/* ===== Auth Page (Login/Register) Styling ===== */
+.auth-page-logo {
+    text-align: center;
+    padding: 2rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.auth-page-logo a {
+    font-family: 'Fredoka One', cursive;
+    color: var(--neon-pink);
+    text-shadow: 0 0 20px rgba(236, 72, 153, 0.8);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.auth-page-logo .logo-icon {
+    font-size: 3rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.auth-page-logo .logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.1;
+}
+
+.auth-page-logo .logo-line1 {
+    font-size: 2.2rem;
+    display: block;
+}
+
+.auth-page-logo .logo-line2 {
+    font-size: 1.8rem;
+    display: block;
+}
+
+/* Inline logo for inside forms */
+.inline-logo {
+    font-family: 'Fredoka One', cursive;
+    color: var(--neon-pink);
+    text-shadow: 0 0 15px rgba(236, 72, 153, 0.6);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.inline-logo .logo-icon {
+    font-size: 2rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.inline-logo .logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.1;
+}
+
+.inline-logo .logo-line1 {
+    font-size: 1.3rem;
+    display: block;
+}
+
+.inline-logo .logo-line2 {
+    font-size: 1rem;
+    display: block;
+}
+
+.auth-page-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+
+.remember-forgot-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.remember-forgot-container .remember-me {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.forgot-password-link {
+    color: var(--turquoise);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.forgot-password-link:hover {
+    color: var(--neon-pink);
+    text-decoration: underline;
+}
+
+/* Stack vertically and center when wrapped */
+@media (max-width: 480px) {
+    .remember-forgot-container {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .remember-forgot-container .remember-me,
+    .remember-forgot-container .forgot-password-link {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+/* ===== Kids Corner Specific Styles ===== */
+.kids-corner-hero {
+    background: linear-gradient(135deg, var(--neon-pink) 0%, var(--turquoise) 100%);
+    padding: 3rem 2rem;
+    border-radius: 30px;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.submission-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.submission-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.submission-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(236, 72, 153, 0.1) 0%, transparent 70%);
+    animation: float 6s ease-in-out infinite;
+}
+
+.submission-card:hover {
+    transform: translateY(-10px) rotate(2deg);
+    border-color: var(--neon-pink);
+    box-shadow: 0 15px 40px rgba(236, 72, 153, 0.3);
+}
+
+.submission-author {
+    font-weight: 600;
+    color: var(--turquoise);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.submission-age {
+    display: inline-block;
+    background: rgba(6, 182, 212, 0.2);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.kids-cta-section {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--glass-border);
+    border-radius: 25px;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.kids-cta-section h3 {
+    color: var(--neon-pink);
+    margin-bottom: 1rem;
+}
+
+/* ===== Responsive Fixes ===== */
+/* Tablet view (1280x800) */
+@media (min-width: 769px) and (max-width: 1400px) {
+    .nav-link {
+        font-size: 0.9rem;
+        margin: 0 0.3rem;
+        white-space: nowrap;
+    }
+
+    .nav-btn-login,
+    .nav-btn-register {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .navbar-brand .logo-icon {
+        font-size: 2.5rem;
+    }
+
+    .navbar-brand .logo-line1 {
+        font-size: 1.3rem;
+    }
+
+    .navbar-brand .logo-line2 {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nav-btn-login,
+    .nav-btn-register {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .kids-corner-hero {
+        padding: 2rem 1rem;
+    }
+
+    .submission-showcase {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== Content Grid Alignment Fixes ===== */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    align-items: start;
+}
+
+/* Ensure cards have consistent heights */
+.content-grid .card,
+.content-grid .glass-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-grid .card img,
+.content-grid .glass-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+/* Fun Facts specific alignment */
+#fun-facts-container .card,
+#fun-facts-container .glass-card {
+    min-height: 200px;
+}
+
+/* Ensure buttons stay at bottom of cards */
+.card .btn-cosmic,
+.glass-card .btn-cosmic {
+    margin-top: auto;
+}

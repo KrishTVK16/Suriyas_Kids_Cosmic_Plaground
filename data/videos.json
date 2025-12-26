@@ -1,0 +1,40 @@
+{
+  "videos": [
+    {
+      "id": "video1",
+      "title": "Journey Through the Solar System",
+      "description": "Take an amazing journey through our solar system!",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": "video2",
+      "title": "Fun Animal Facts",
+      "description": "Learn amazing facts about animals from around the world!",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": "video3",
+      "title": "How to Draw a Rocket",
+      "description": "Follow along and learn how to draw a cool rocket!",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": "video4",
+      "title": "The Magic of Colors",
+      "description": "Discover the magic of mixing colors and creating art!",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": "video5",
+      "title": "Space Songs for Kids",
+      "description": "Sing along to fun songs about space and planets!",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": "video6",
+      "title": "Nature Adventure",
+      "description": "Explore nature and learn about plants and animals!",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    }
+  ]
+}

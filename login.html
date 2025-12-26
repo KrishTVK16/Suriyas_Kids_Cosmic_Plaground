@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Cosmic Playground</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Fredoka+One&family=Poppins:wght@300;400;600&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Login Form Container -->
+    <div class="auth-page-container">
+        <div class="form-container glass" style="max-width: 500px; width: 100%;">
+            <div class="text-center mb-4">
+                <a href="index.html" class="inline-logo">
+                    <span class="logo-icon">🌟</span>
+                    <span class="logo-text">
+                        <span class="logo-line1">Cosmic</span>
+                        <span class="logo-line2">Playground</span>
+                    </span>
+                </a>
+            </div>
+            <h2 class="text-center mb-4">🔐 Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-username">Username</label>
+                    <input type="text" class="form-control" id="login-username" name="username"
+                        placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" class="form-control" id="login-password" name="password"
+                        placeholder="Enter your password" required>
+                </div>
+                <div class="form-group remember-forgot-container">
+                    <label class="remember-me">
+                        <input type="checkbox" name="remember"> Remember me
+                    </label>
+                    <a href="#" class="forgot-password-link">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn-cosmic" style="width: 100%;">Login</button>
+                <p class="text-center mt-3">
+                    Don't have an account? <a href="register.html" style="color: var(--turquoise);">Register here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

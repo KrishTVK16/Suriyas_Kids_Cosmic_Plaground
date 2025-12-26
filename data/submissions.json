@@ -1,0 +1,32 @@
+{
+  "submissions": [
+    {
+      "id": "sub1",
+      "author": "Emma",
+      "age": 8,
+      "content": "I drew a picture of a rocket flying to Mars! It was so fun to imagine what it would be like to visit another planet.",
+      "image": "data/images/By Emma.avif"
+    },
+    {
+      "id": "sub2",
+      "author": "Lucas",
+      "age": 10,
+      "content": "👽🌍✨I wrote a story about a friendly alien named Zorp who came to Earth to learn about our planet. When Zorp arrived, he smiled with curiosity and excitement. He traveled to different places, met people, and watched how they helped and cared for one another. By learning Earth's kindness, Zorp understood the value of friendship, and soon he made many friends who showed him that kindness can connect everyone, no matter where they come from.",
+      "image": null
+    },
+    {
+      "id": "sub3",
+      "author": "Sophia",
+      "age": 7,
+      "content": "I made a star mobile for my room! It has all the colors of the rainbow and sparkles in the light.",
+      "image": "data/images/By Sophia.jpg"
+    },
+    {
+      "id": "sub4",
+      "author": "Noah",
+      "age": 9,
+      "content": "I learned about dolphins and wrote a poem about them. They're my favorite animal now! Silver laughter in the sea, Dolphins dance where waves run free. Moonlight hums their secret song, Joy swims softly all day long.",
+      "image": null
+    }
+  ]
+}

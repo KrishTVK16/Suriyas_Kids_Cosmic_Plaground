@@ -1,0 +1,37 @@
+{
+  "vision": "To inspire every child to reach for the stars, explore the cosmos of their imagination, and discover the magic that exists in learning, creativity, and wonder. We envision a world where children's curiosity knows no bounds and where every story, game, and activity sparks joy and knowledge.",
+  "mission": "Our mission is to create engaging, educational, and entertaining content that combines the wonder of space exploration with fun learning experiences. We strive to make every child feel like a cosmic explorer, whether they're reading a story, solving a puzzle, creating art, or learning about the world around them. Through our magazine, we aim to foster creativity, curiosity, and a love for learning that will last a lifetime.",
+  "values": [
+    {
+      "title": "Creativity",
+      "description": "We believe every child is creative and deserves opportunities to express their imagination through stories, art, and play."
+    },
+    {
+      "title": "Education",
+      "description": "Learning should be fun! We make education engaging and accessible through interactive content, quizzes, and activities."
+    },
+    {
+      "title": "Safety",
+      "description": "We prioritize child safety and create a secure, positive environment where kids can explore and learn without worries."
+    },
+    {
+      "title": "Inclusivity",
+      "description": "Every child is welcome in our cosmic playground, regardless of background, ability, or interests."
+    }
+  ],
+  "goals": [
+    "Reach 50,000 young readers by 2025",
+    "Create 1000+ educational activities",
+    "Partner with schools and libraries",
+    "Develop mobile app for easy access",
+    "Launch interactive learning games",
+    "Create video content series"
+  ],
+  "impact": {
+    "readers": "10,000+",
+    "stories": "500+",
+    "activities": "200+",
+    "countries": "25+",
+    "languages": "5"
+  }
+}

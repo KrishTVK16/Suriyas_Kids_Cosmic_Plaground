@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Cosmic background -->
+  <defs>
+    <radialGradient id="cosmicGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#6b46c1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e1b4b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0e27;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#cosmicGradient)" stroke="#ec4899" stroke-width="2"/>
+  
+  <!-- Stars -->
+  <circle cx="20" cy="25" r="1.5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="75" cy="30" r="1" fill="#ffffff" opacity="0.6"/>
+  <circle cx="85" cy="60" r="1.2" fill="#06b6d4" opacity="0.7"/>
+  <circle cx="15" cy="70" r="1" fill="#ec4899" opacity="0.8"/>
+  
+  <!-- Main star icon -->
+  <path d="M50,15 L55,35 L75,35 L60,47 L65,67 L50,55 L35,67 L40,47 L25,35 L45,35 Z" 
+        fill="#ec4899" stroke="#06b6d4" stroke-width="1.5" opacity="0.95"/>
+  
+  <!-- Small planet -->
+  <circle cx="75" cy="75" r="8" fill="#06b6d4" opacity="0.7"/>
+  <ellipse cx="75" cy="75" rx="12" ry="3" fill="none" stroke="#06b6d4" stroke-width="1" opacity="0.5"/>
+</svg>

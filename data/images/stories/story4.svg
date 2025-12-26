@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b46c1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#grad4)"/>
+  <!-- Comet -->
+  <circle cx="250" cy="120" r="20" fill="#06b6d4"/>
+  <circle cx="250" cy="120" r="15" fill="#ffffff" opacity="0.8"/>
+  <!-- Tail -->
+  <ellipse cx="200" cy="130" rx="50" ry="15" fill="#06b6d4" opacity="0.5" transform="rotate(-20 200 130)"/>
+  <ellipse cx="160" cy="145" rx="60" ry="12" fill="#06b6d4" opacity="0.3" transform="rotate(-20 160 145)"/>
+  <!-- Home planet -->
+  <circle cx="80" cy="220" r="40" fill="#ec4899" opacity="0.7"/>
+  <path d="M 60 210 Q 80 200 100 210" fill="#6b46c1" opacity="0.5"/>
+  <path d="M 50 230 Q 80 220 110 230" fill="#6b46c1" opacity="0.5"/>
+  <!-- Stars -->
+  <circle cx="100" cy="50" r="2" fill="#ffcc00"/>
+  <circle cx="320" cy="80" r="2.5" fill="#ffffff"/>
+  <circle cx="300" cy="250" r="2" fill="#06b6d4"/>
+  <text x="200" y="285" font-family="Arial, sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">Comet's Journey</text>
+</svg>
