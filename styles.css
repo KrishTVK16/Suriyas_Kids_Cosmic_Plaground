@@ -21,6 +21,13 @@
     box-sizing: border-box;
 }
 
+/* Global text rendering improvements */
+body, p, li, span, div {
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+}
+
 body {
     font-family: 'Poppins', 'Inter', sans-serif;
     background: var(--cosmic-gradient);
@@ -65,6 +72,9 @@ h6 {
     font-family: 'Baloo 2', 'Fredoka One', cursive;
     font-weight: 700;
     color: var(--starlight-white);
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
 }
 
 h1 {
@@ -87,6 +97,9 @@ p {
     font-size: 1.1rem;
     line-height: 1.8;
     color: rgba(248, 250, 252, 0.9);
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
 }
 
 /* ===== Preserve Emoji and Icon Original Colors ===== */
@@ -228,6 +241,13 @@ h1, h2, h3, h4, h5, h6 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .glass-card:hover {
@@ -258,14 +278,16 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
 }
 
 .neo-card h4,
 .neo-card p {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
 }
 
 .neo-card:hover {
@@ -399,12 +421,18 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     padding: 4rem 2rem;
     overflow: visible;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .hero-content {
     text-align: center;
     z-index: 10;
     animation: slideIn 1s ease;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
 .hero-buttons {
@@ -429,6 +457,13 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: glow 3s ease-in-out infinite;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    line-height: 1.2;
 }
 
 /* Ensure emojis in h1 are not affected by gradient text */
@@ -743,6 +778,9 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     box-sizing: border-box;
     min-width: 0;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
 }
 
 .card:hover {
@@ -776,6 +814,13 @@ h1, h2, h3, h4, h5, h6 {
 .card-title {
     color: var(--neon-pink);
     margin-bottom: 0.5rem;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    line-height: 1.2;
 }
 
 /* Push buttons and links to bottom of card */
@@ -898,18 +943,89 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
+        word-break: normal;
+        overflow-wrap: normal;
+        line-height: 1.2;
     }
 
     h2 {
         font-size: 1.75rem;
+        word-break: normal;
+        overflow-wrap: normal;
+        line-height: 1.2;
     }
 
     h3 {
         font-size: 1.5rem;
+        word-break: normal;
+        overflow-wrap: normal;
+        line-height: 1.2;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .section-header p {
+        font-size: 1.1rem;
+    }
+
+    .page-hero p {
+        font-size: 1.3rem;
     }
 
     .hero h1 {
         font-size: 2.5rem;
+        word-break: normal;
+        overflow-wrap: normal;
+        line-height: 1.2;
+    }
+
+    .page-hero h1 {
+        font-size: 2.5rem;
+        word-break: normal;
+        overflow-wrap: normal;
+        line-height: 1.2;
+    }
+
+    .page-hero-content {
+        padding: 0 1.5rem;
+    }
+
+    .glow-text {
+        word-break: normal;
+        overflow-wrap: normal;
+        line-height: 1.2;
+    }
+
+    h2.glow-text {
+        font-size: 1.75rem;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+        word-break: normal;
+        overflow-wrap: normal;
+        line-height: 1.2;
+    }
+
+    /* Override inline font-size styles on tablets */
+    h1[style*="font-size: 4.5rem"] {
+        font-size: 2.5rem !important;
+    }
+
+    h2[style*="font-size: 2.5rem"],
+    h2[style*="font-size: 3rem"] {
+        font-size: 1.75rem !important;
+    }
+
+    .glass-card {
+        padding: 1.5rem;
+        margin: 0.5rem;
     }
 
     .content-grid {
@@ -932,9 +1048,28 @@ h1, h2, h3, h4, h5, h6 {
     .card {
         padding: 1rem;
     }
+
+    .card-title {
+        font-size: 1.5rem;
+        word-break: normal;
+        overflow-wrap: normal;
+        line-height: 1.2;
+    }
 }
 
 @media (max-width: 580px) {
+    p {
+        font-size: 1rem;
+    }
+
+    .page-hero p {
+        font-size: 1.2rem;
+    }
+
+    .section-header p {
+        font-size: 1.05rem;
+    }
+
     .hero-buttons {
         flex-direction: column;
         gap: 0.75rem;
@@ -955,6 +1090,87 @@ h1, h2, h3, h4, h5, h6 {
 
     .hero h1 {
         font-size: 2rem;
+        word-break: normal;
+        overflow-wrap: normal;
+        line-height: 1.2;
+    }
+
+    .page-hero h1 {
+        font-size: 2rem;
+        word-break: normal;
+        overflow-wrap: normal;
+        line-height: 1.2;
+    }
+
+    .page-hero-content {
+        padding: 0 1rem;
+    }
+
+    h2.glow-text {
+        font-size: 1.5rem;
+        word-break: normal;
+        overflow-wrap: normal;
+        line-height: 1.2;
+    }
+
+    .section-header h2 {
+        font-size: 1.75rem;
+        word-break: normal;
+        overflow-wrap: normal;
+        line-height: 1.2;
+    }
+
+    .page-hero-content h1,
+    .hero-content h1 {
+        font-size: 1.75rem !important;
+    }
+
+    /* Override inline styles for headings on mobile */
+    h1[style*="font-size"] {
+        font-size: 1.75rem !important;
+    }
+
+    h2[style*="font-size"] {
+        font-size: 1.5rem !important;
+    }
+
+    h3[style*="font-size: 1.8rem"] {
+        font-size: 1.25rem !important;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        word-break: normal;
+        overflow-wrap: normal;
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .section-header p {
+        font-size: 1rem;
+    }
+
+    .page-hero p {
+        font-size: 1.1rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    /* Override inline font-size styles for paragraphs on mobile */
+    p[style*="font-size: 1.3rem"],
+    p[style*="font-size: 1.4rem"],
+    p[style*="font-size: 1.6rem"] {
+        font-size: 1rem !important;
+    }
+
+    p[style*="font-size: 1.1rem"],
+    p[style*="font-size: 1.2rem"] {
+        font-size: 0.95rem !important;
     }
 
     .btn-cosmic {
@@ -984,8 +1200,8 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: -50%;
     left: -50%;
-    width: 200%;
-    height: 200%;
+    width: 100%;
+    height: 100%;
     background-image:
         radial-gradient(circle at 25% 25%, rgba(236, 72, 153, 0.2) 0%, transparent 50%),
         radial-gradient(circle at 75% 75%, rgba(6, 182, 212, 0.2) 0%, transparent 50%);
@@ -1212,6 +1428,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 4rem 2rem;
     overflow: visible;
     background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .page-hero-content {
@@ -1220,6 +1438,9 @@ h1, h2, h3, h4, h5, h6 {
     animation: slideIn 1s ease;
     max-width: 900px;
     margin: 0 auto;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
 .page-hero h1 {
@@ -1232,6 +1453,13 @@ h1, h2, h3, h4, h5, h6 {
     animation: glow 3s ease-in-out infinite;
     text-shadow: 0 0 30px rgba(236, 72, 153, 0.5);
     font-variant-emoji: emoji;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    line-height: 1.2;
 }
 
 /* Ensure emojis in section headers maintain original colors */
@@ -1264,6 +1492,9 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid var(--glass-border);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
     overflow: visible;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .enhanced-section::before {
@@ -1271,8 +1502,8 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: -50%;
     left: -50%;
-    width: 200%;
-    height: 200%;
+    width: 100%;
+    height: 100%;
     background: radial-gradient(circle, rgba(236, 72, 153, 0.1) 0%, transparent 70%);
     animation: float 8s ease-in-out infinite;
     pointer-events: none;
@@ -1293,6 +1524,13 @@ h1, h2, h3, h4, h5, h6 {
     font-variant-emoji: emoji;
     -webkit-font-feature-settings: "emoji";
     font-feature-settings: "emoji";
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    line-height: 1.2;
 }
 
 .section-header p {
@@ -1746,7 +1984,8 @@ h1, h2, h3, h4, h5, h6 {
         display: inline-block;
         padding: 0.25rem 0.5rem;
         margin: 0 0.25rem;
-        word-break: break-word;
+        word-break: normal;
+        overflow-wrap: normal;
         text-decoration: underline;
         min-height: 44px;
         line-height: 44px;
@@ -1795,13 +2034,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .kids-corner-hero h1 {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
 }
 
 .kids-corner-hero p {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
 }
 
 .submission-showcase {
@@ -1825,8 +2066,9 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     width: 100%;
     box-sizing: border-box;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
 }
 
 .submission-card::before {
@@ -1834,8 +2076,8 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: -50%;
     left: -50%;
-    width: 200%;
-    height: 200%;
+    width: 100%;
+    height: 100%;
     background: radial-gradient(circle, rgba(236, 72, 153, 0.1) 0%, transparent 70%);
     animation: float 6s ease-in-out infinite;
 }
@@ -2078,6 +2320,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 370px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-header p {
+        font-size: 0.95rem;
+    }
+
+    .page-hero p {
+        font-size: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
     .kids-corner-hero {
         padding: 1rem 0.75rem;
     }
@@ -2109,6 +2387,23 @@ h1, h2, h3, h4, h5, h6 {
 
     .kids-cta-section h3 {
         font-size: 1.1rem;
+    }
+
+    /* Override inline font-size styles for very small screens */
+    p[style*="font-size"] {
+        font-size: 0.9rem !important;
+    }
+
+    h1[style*="font-size"] {
+        font-size: 1.5rem !important;
+    }
+
+    h2[style*="font-size"] {
+        font-size: 1.25rem !important;
+    }
+
+    h3[style*="font-size"] {
+        font-size: 1.1rem !important;
     }
 }
 
@@ -2167,9 +2462,10 @@ section.container .glass-card {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
-    overflow: visible;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    overflow: hidden;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
 }
 
 /* Remove scrolling from all sections */
