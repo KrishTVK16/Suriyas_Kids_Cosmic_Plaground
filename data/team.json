@@ -3,49 +3,49 @@
     {
       "name": "Sarah Johnson",
       "role": "Editor-in-Chief",
-      "bio": "Sarah loves creating magical stories for kids. She has been writing children's stories for over 10 years! With a degree in Children's Literature, Sarah ensures every story sparks imagination and teaches valuable lessons. She's published 50+ children's books and won the Young Readers Award in 2020.",
-      "image": "https://picsum.photos/300/300?random=30",
-      "email": "sarah@cosmicplayground.com",
+      "bio": "Sarah loves creating magical stories for kids. She has been writing children's stories for over 10 years! With a degree in Children's Literature, Sarah ensures every story sparks imagination and teaches valuable lessons.",
+      "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face",
+      "email": "sarah@kidzmagazine.com",
       "funFact": "Sarah's favorite planet is Saturn because of its beautiful rings!"
     },
     {
       "name": "Mike Chen",
       "role": "Art Director",
-      "bio": "Mike brings stories to life with beautiful illustrations. He loves drawing space adventures and friendly aliens! With 15 years of experience in digital art and animation, Mike creates vibrant, kid-friendly artwork that makes every page come alive. He's worked on award-winning children's apps and books.",
-      "image": "https://picsum.photos/300/300?random=31",
-      "email": "mike@cosmicplayground.com",
+      "bio": "Mike brings stories to life with beautiful illustrations. He loves drawing space adventures and friendly aliens! With 15 years of experience in digital art and animation, Mike creates vibrant, kid-friendly artwork that makes every page come alive.",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      "email": "mike@kidzmagazine.com",
       "funFact": "Mike can draw a rocket in under 30 seconds!"
     },
     {
       "name": "Emma Williams",
       "role": "Education Specialist",
-      "bio": "Emma creates fun learning activities and quizzes. She makes sure learning is always fun and engaging! With a Master's in Early Childhood Education, Emma designs curriculum-aligned content that helps kids learn while having fun. She's a former elementary school teacher with a passion for making education accessible.",
-      "image": "https://via.placeholder.com/300x300/06b6d4/ffffff?text=Emma",
-      "email": "emma@cosmicplayground.com",
+      "bio": "Emma creates fun learning activities and quizzes. She makes sure learning is always fun and engaging! With a Master's in Early Childhood Education, Emma designs curriculum-aligned content that helps kids learn while having fun.",
+      "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+      "email": "emma@kidzmagazine.com",
       "funFact": "Emma has visited 20+ planetariums around the world!"
     },
     {
       "name": "David Martinez",
       "role": "Tech Wizard",
-      "bio": "David makes sure our website works perfectly and looks amazing. He loves coding and creating interactive experiences! A full-stack developer with 12 years of experience, David builds seamless user experiences and ensures our site is fast, safe, and fun for kids. He's passionate about web accessibility.",
-      "image": "https://via.placeholder.com/300x300/6b46c1/ffffff?text=David",
-      "email": "david@cosmicplayground.com",
+      "bio": "David makes sure our website works perfectly and looks amazing. He loves coding and creating interactive experiences! A full-stack developer with 12 years of experience, David builds seamless user experiences and ensures our site is fast, safe, and fun for kids.",
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+      "email": "david@kidzmagazine.com",
       "funFact": "David built his first website when he was 10 years old!"
     },
     {
       "name": "Lisa Park",
       "role": "Content Creator",
-      "bio": "Lisa creates amazing craft tutorials and DIY projects. She loves helping kids express their creativity through hands-on activities! With a background in art therapy, Lisa designs crafts that are both fun and therapeutic. She's created over 100 craft tutorials for kids.",
-      "image": "https://via.placeholder.com/300x300/ec4899/ffffff?text=Lisa",
-      "email": "lisa@cosmicplayground.com",
+      "bio": "Lisa creates amazing craft tutorials and DIY projects. She loves helping kids express their creativity through hands-on activities! With a background in art therapy, Lisa designs crafts that are both fun and therapeutic. She's created over 100 craft tutorials.",
+      "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
+      "email": "lisa@kidzmagazine.com",
       "funFact": "Lisa can make origami animals with her eyes closed!"
     },
     {
       "name": "James Thompson",
       "role": "Science Writer",
-      "bio": "James writes fascinating science articles and facts that make complex topics easy to understand for kids. With a PhD in Astrophysics, James has a talent for explaining space and science in fun, kid-friendly ways. He's published research papers and loves sharing his passion for space.",
-      "image": "https://via.placeholder.com/300x300/06b6d4/ffffff?text=James",
-      "email": "james@cosmicplayground.com",
+      "bio": "James writes fascinating science articles and facts that make complex topics easy to understand for kids. With a PhD in Astrophysics, James has a talent for explaining space and science in fun, kid-friendly ways. He loves sharing his passion for space.",
+      "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face",
+      "email": "james@kidzmagazine.com",
       "funFact": "James has a telescope named after him at a local observatory!"
     }
   ]

@@ -8,69 +8,87 @@ const FALLBACK_DATA = {
     stories: {
         featured: [
             {
-                id: "story1",
-                title: "The Cosmic Adventure of Luna",
-                description: "Join Luna as she travels through the galaxy meeting friendly aliens and discovering new planets! Follow her journey as she learns about friendship, courage, and the wonders of space. Perfect for ages 6-10.",
-                image: "data/images/stories/story1.svg",
-                author: "Sarah Johnson",
-                readingTime: "5 min read",
-                category: "Space Adventure"
-            },
-            {
                 id: "story2",
                 title: "Stardust and the Magic Rocket",
                 description: "Stardust finds a magical rocket that takes them to the edge of the universe! Discover what happens when they meet the Star Guardians and learn about the power of dreams. An inspiring tale for young explorers.",
-                image: "data/images/stories/story2.svg",
+                image: "Star Dust and Magic Rocket.png",
                 author: "Mike Chen",
                 readingTime: "7 min read",
-                category: "Fantasy"
+                category: "Adventure & Fantasy"
             },
             {
                 id: "story3",
                 title: "The Planet of Colors",
                 description: "Discover a planet where everything is made of colors and music! Join the Color Crew as they solve mysteries and bring harmony to their vibrant world. A fun and educational story about colors and creativity.",
-                image: "data/images/stories/story3.svg",
+                image: "Planet Of Colors.png",
                 author: "Emma Williams",
                 readingTime: "6 min read",
                 category: "Educational"
+            },
+            {
+                id: "story_arts_new_1",
+                title: "The Melody Maker",
+                description: "In a world without sound, one girl discovers the magic of music. Follow her journey as she brings melody back to her village.",
+                image: "The Melody Maker.png",
+                author: "Melody Tune",
+                readingTime: "5 min read",
+                category: "Arts & Learning"
             }
         ],
         all: [
             {
-                id: "story1",
-                title: "The Cosmic Adventure of Luna",
-                description: "Join Luna as she travels through the galaxy meeting friendly aliens and discovering new planets! Follow her journey as she learns about friendship, courage, and the wonders of space. Perfect for ages 6-10.",
-                image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=400&h=300&fit=crop&q=80",
-                author: "Sarah Johnson",
-                readingTime: "5 min read",
-                category: "Space Adventure"
-            },
-            {
                 id: "story2",
                 title: "Stardust and the Magic Rocket",
                 description: "Stardust finds a magical rocket that takes them to the edge of the universe! Discover what happens when they meet the Star Guardians and learn about the power of dreams. An inspiring tale for young explorers.",
-                image: "https://images.unsplash.com/photo-1484589065579-248aad0d8b13?w=400&h=300&fit=crop&q=80",
+                image: "Star Dust and Magic Rocket.png",
                 author: "Mike Chen",
                 readingTime: "7 min read",
-                category: "Fantasy"
+                category: "Adventure & Fantasy"
             },
             {
                 id: "story3",
                 title: "The Planet of Colors",
                 description: "Discover a planet where everything is made of colors and music! Join the Color Crew as they solve mysteries and bring harmony to their vibrant world. A fun and educational story about colors and creativity.",
-                image: "https://images.unsplash.com/photo-1534361960057-19889db9621e?w=400&h=300&fit=crop&q=80",
+                image: "Planet Of Colors.png",
                 author: "Emma Williams",
                 readingTime: "6 min read",
-                category: "Educational"
+                category: "Arts & Learning"
             },
             {
-                id: "story4",
-                title: "Comet's Journey Home",
-                description: "Follow Comet as they race through space to get home before bedtime! A heartwarming story about family, time, and the importance of being home. Perfect bedtime reading for ages 6-8.",
-                image: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=400&h=300&fit=crop&q=80",
-                author: "David Martinez",
-                readingTime: "4 min read",
-                category: "Bedtime Story"
+                id: "story_nature_2",
+                title: "Whispers of the Ocean",
+                description: "Dive deep with Maya the Mermaid as she discovers the importance of keeping our oceans clean. A beautiful story about marine life and conservation.",
+                image: "Whispers of the Ocean.jpg",
+                author: "Ocean Blue",
+                readingTime: "6 min read",
+                category: "Nature & Animals"
+            },
+            {
+                id: "story_adventure_new_1",
+                title: "The Crystal Cave",
+                description: "Join Alex and Sam as they discover a hidden cave filled with glowing crystals! A magical journey about bravery and friendship.",
+                image: "The Crystal Cave 2.jpg",
+                author: "Adventure Seeker",
+                readingTime: "6 min read",
+                category: "Adventure & Fantasy"
+            },
+            {
+                id: "story_arts_new_1",
+                title: "The Melody Maker",
+                description: "In a world without sound, one girl discovers the magic of music. Follow her journey as she brings melody back to her village.",
+                image: "The Melody Maker.png",
+                author: "Melody Tune",
+                readingTime: "5 min read",
+                category: "Arts & Learning"
+            },
+            {
+                id: "story_arts_1",
+                title: "The Magic Paintbrush",
+                description: "Everything Li paints comes to life! But what happens when he loses his magic brush? A touching story about creativity and believing in yourself.",
+                image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&h=300&fit=crop&q=80",
+                author: "Arty Brush",
+                readingTime: "5 min read",
+                category: "Arts & Learning"
             },
             {
                 id: "story5",
@@ -79,16 +97,16 @@ const FALLBACK_DATA = {
                 image: "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?w=400&h=300&fit=crop&q=80",
                 author: "Sarah Johnson",
                 readingTime: "8 min read",
-                category: "Science Fiction"
+                category: "Space & Sci-Fi"
             },
             {
-                id: "story6",
-                title: "Nebula's Secret",
-                description: "Uncover the secret hidden within the beautiful nebula clouds! Join a team of young space explorers as they discover the mysteries of cosmic clouds and learn about space science.",
-                image: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=400&h=300&fit=crop&q=80",
-                author: "Mike Chen",
-                readingTime: "6 min read",
-                category: "Adventure"
+                id: "story_nature_1",
+                title: "The Jungle Orchestra",
+                description: "Deep in the rainforest, the animals are preparing for the biggest concert of the year! Learn about different jungle animals and the sounds they make in this musical adventure.",
+                image: "https://images.unsplash.com/photo-1534567153574-2b12153a87f0?w=400&h=300&fit=crop&q=80",
+                author: "Leo Wild",
+                readingTime: "5 min read",
+                category: "Nature & Animals"
             }
         ]
     },
@@ -157,6 +175,48 @@ const FALLBACK_DATA = {
             {
                 title: "Amazing Nature Fact",
                 content: "Trees can communicate with each other! They share nutrients and information through underground fungal networks called 'mycorrhizal networks'. When one tree is sick, others send it food!"
+            },
+            {
+                title: "Fun Water Fact",
+                content: "Hot water freezes faster than cold water! This phenomenon is known as the Mpemba effect."
+            },
+            {
+                title: "Space Sound Fact",
+                content: "Space is completely silent. Because there is no air in space, sound waves cannot travel."
+            }
+        ]
+    },
+    history: {
+        facts: [
+            {
+                title: "The Great Pyramids",
+                content: "The Great Pyramid of Giza is the oldest of the Seven Wonders of the Ancient World, and the only one to remain largely intact. It was built as a tomb for the Pharaoh Khufu.",
+                year: "2560 BC"
+            },
+            {
+                title: "First Moon Landing",
+                content: "On July 20, 1969, Neil Armstrong became the first human to step onto the surface of the Moon. His first words were 'That's one small step for man, one giant leap for mankind.'",
+                year: "1969"
+            },
+            {
+                title: "The Dinosaurs",
+                content: "Dinosaurs ruled the Earth for about 165 million years! They went extinct about 65 million years ago, likely due to a giant asteroid impact.",
+                year: "65 Million Years Ago"
+            },
+            {
+                title: "The Great Wall of China",
+                content: "The Great Wall of China is the longest wall in the world, stretching over 13,000 miles! It was built over many centuries to protect China from invaders.",
+                year: "7th Century BC - 1644 AD"
+            },
+            {
+                title: "Wright Brothers' First Flight",
+                content: "Orville and Wilbur Wright made the first controlled, sustained flight of a powered, heavier-than-air aircraft. Their flight lasted only 12 seconds but changed the world forever!",
+                year: "1903"
+            },
+            {
+                title: "Invention of the Wheel",
+                content: "The wheel was invented in Mesopotamia (modern-day Iraq) and is considered one of the most important inventions in human history. It revolutionized transport and pottery.",
+                year: "3500 BC"
             }
         ]
     },
@@ -164,27 +224,93 @@ const FALLBACK_DATA = {
         animals: [
             {
                 name: "Dolphin",
+                category: "Animals",
                 fact: "Dolphins are super smart! They can recognize themselves in mirrors and have their own names. They use echolocation to 'see' with sound, sending out clicks that bounce off objects to help them navigate and find food.",
-                image: "data/images/nature/animal1.svg",
+                image: "https://images.unsplash.com/photo-1607153333879-c174d265f1d2?w=800&q=80",
                 habitat: "Oceans worldwide",
                 diet: "Fish and squid",
                 funFact: "Dolphins sleep with one eye open!"
             },
             {
                 name: "Elephant",
-                fact: "Elephants never forget! They have amazing memories and can remember friends for many years. They're also the largest land animals and can communicate using sounds too low for humans to hear.",
-                image: "data/images/nature/animal2.svg",
+                category: "Animals",
+                fact: "Elephants never forget! They have amazing memories and can remember friends for many years. They are the largest land animals.",
+                image: "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=800&q=80",
                 habitat: "Africa and Asia",
                 diet: "Plants, fruits, and bark",
                 funFact: "Elephants can smell water from 3 miles away!"
             },
             {
+                name: "Tiger",
+                category: "Animals",
+                fact: "Tigers are the largest cats in the world! Each tiger has unique stripes, just like human fingerprints. They love swimming!",
+                image: "data/images/nature/Tiger2.jfif",
+                habitat: "Asia",
+                diet: "Meat",
+                funFact: "A tiger's roar can be heard from 2 miles away!"
+            },
+            {
+                name: "Giraffe",
+                category: "Animals",
+                fact: "Giraffes have super long necks to reach high leaves. They only need to sleep for about 30 minutes a day!",
+                image: "https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=800&q=80",
+                habitat: "African savannas",
+                diet: "Leaves",
+                funFact: "A giraffe's tongue is blue-black!"
+            },
+            {
                 name: "Penguin",
-                fact: "Penguins can't fly, but they are amazing swimmers! They can dive deep into the ocean and hold their breath for up to 20 minutes. They also huddle together to stay warm in freezing temperatures.",
-                image: "data/images/nature/animal3.svg",
-                habitat: "Antarctica and surrounding areas",
-                diet: "Fish, krill, and squid",
+                category: "Birds",
+                fact: "Penguins can't fly, but they are amazing swimmers! They can dive deep into the ocean and hold their breath for up to 20 minutes.",
+                image: "https://images.unsplash.com/photo-1598439210625-5067c578f3f6?w=800&q=80",
+                habitat: "Antarctica",
+                diet: "Fish and krill",
                 funFact: "Penguins can jump 6 feet out of the water!"
+            },
+            {
+                name: "Parrot",
+                category: "Birds",
+                fact: "Parrots are colorful birds that can mimic human speech. They lived in tropical rainforests.",
+                image: "https://images.unsplash.com/photo-1452570053594-1b985d6ea890?w=800&q=80",
+                habitat: "Rainforests",
+                diet: "Fruits and seeds",
+                funFact: "Some parrots live for 80 years!"
+            },
+            {
+                name: "Butterfly",
+                category: "Insects",
+                fact: "Butterflies taste with their feet! They migrate thousands of miles and help pollinate flowers.",
+                image: "https://images.unsplash.com/photo-1475724017904-b712052c192a?w=800&q=80",
+                habitat: "Gardens",
+                diet: "Nectar",
+                funFact: "Butterflies have four wings!"
+            },
+            {
+                name: "Ladybug",
+                category: "Insects",
+                fact: "Ladybugs are small beetles that are often red with black spots. They help farmers by eating microscopic pests.",
+                image: "data/images/nature/LadyBug.jfif",
+                habitat: "Gardens and fields",
+                diet: "Aphids",
+                funFact: "Ladybugs hibernate in winter!"
+            },
+            {
+                name: "Turtle",
+                category: "Reptiles",
+                fact: "Turtles have a hard shell that protects them like a shield. Sea turtles spend most of their lives in the ocean.",
+                image: "data/images/nature/Turtule.webp",
+                habitat: "Oceans",
+                diet: "Jellyfish",
+                funFact: "Turtles can live for 100 years!"
+            },
+            {
+                name: "Chameleon",
+                category: "Reptiles",
+                fact: "Chameleons can change color to blend in or show their mood! Their eyes move independently.",
+                image: "data/images/nature/Chameleon.avif",
+                habitat: "Rainforests",
+                diet: "Insects",
+                funFact: "Their tongue is longer than their body!"
             }
         ]
     },
@@ -223,6 +349,46 @@ const FALLBACK_DATA = {
                 id: "puzzle2",
                 title: "Planet Matching Game",
                 description: "Match planets with their descriptions!"
+            },
+            {
+                id: "puzzle3",
+                title: "Cosmic Crossword",
+                description: "Solve the crossword puzzle with space-themed clues!"
+            },
+            {
+                id: "puzzle4",
+                title: "Star Pattern Puzzle",
+                description: "Complete the star patterns by connecting the dots!"
+            },
+            {
+                id: "puzzle5",
+                title: "Rocket Maze",
+                description: "Help the rocket navigate through the asteroid field!"
+            },
+            {
+                id: "puzzle6",
+                title: "Animal Memory Game",
+                description: "Match pairs of animals in this fun memory game!"
+            },
+            {
+                id: "game1",
+                title: "Space Jump",
+                description: "Jump from planet to planet and collect stars!"
+            },
+            {
+                id: "game2",
+                title: "Math Blaster",
+                description: "Solve math problems to fuel your rocket ship!"
+            },
+            {
+                id: "game3",
+                title: "Color Matcher",
+                description: "Match the falling colors to the buckets below!"
+            },
+            {
+                id: "game4",
+                title: "Shape Sorter",
+                description: "Fit the shapes into the correct holes before time runs out!"
             }
         ]
     },
@@ -230,15 +396,40 @@ const FALLBACK_DATA = {
         videos: [
             {
                 id: "video1",
-                title: "Journey Through the Solar System",
-                description: "Take an amazing journey through our solar system!",
-                embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title: "Solar System 101",
+                description: "Explore our amazing solar system with National Geographic!",
+                embedUrl: "https://www.youtube.com/embed/libKVRa01L8"
             },
             {
                 id: "video2",
-                title: "Fun Animal Facts",
-                description: "Learn amazing facts about animals from around the world!",
-                embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title: "The Animal Kingdom",
+                description: "Learn about mammals, birds, fish, and more!",
+                embedUrl: "https://www.youtube.com/embed/mRidGna-V4E"
+            },
+            {
+                id: "video3",
+                title: "Learn Colors with Balloons",
+                description: "A fun animation to learn all the colors of the rainbow!",
+                embedUrl: "https://www.youtube.com/embed/pUPM3DtK9so"
+            },
+            {
+                id: "video4",
+                title: "Lifecycle of a Butterfly",
+                description: "Watch how a caterpillar turns into a beautiful butterfly.",
+                embedUrl: "https://www.youtube.com/embed/O1S8WzwLPlM"
+            },
+            {
+                id: "video5",
+                title: "Seven Continents Song",
+                description: "Sing along and learn about the seven continents of the world!",
+                embedUrl: "https://www.youtube.com/embed/K6DSMZ8b3LE"
+            },
+            {
+                id: "video6",
+                title: "Deep Ocean Creatures",
+                description: "Dive deep and discover the strange creatures of the deep sea.",
+                embedUrl: "https://www.youtube.com/embed/U9zZtiV31Z0",
+                image: "https://images.unsplash.com/photo-1682687982501-1e58ab814714?q=80&w=2070&auto=format&fit=crop"
             }
         ]
     },
@@ -249,13 +440,27 @@ const FALLBACK_DATA = {
                 author: "Emma",
                 age: 8,
                 content: "I drew a picture of a rocket flying to Mars! It was so fun to imagine what it would be like to visit another planet.",
-                image: "https://via.placeholder.com/400x300/ec4899/ffffff?text=Emma's+Art"
+                image: "data/images/By Emma.avif"
             },
             {
                 id: "sub2",
                 author: "Lucas",
                 age: 10,
-                content: "I wrote a story about a friendly alien who came to Earth to learn about our planet. His name was Zorp!",
+                content: "I wrote a story about a friendly alien who came to Earth to learn about our planet. His name was Zorp! When Zorp first arrived on Earth, he was amazed by all the colors and sounds. He visited a school where children were learning about friendship and kindness. Zorp watched as kids helped each other with their homework and shared their snacks. He learned that Earth is special because people care for each other. By the end of his visit, Zorp had made many new friends and promised to come back to Earth again. He realized that friendship is the most important thing in the universe!",
+                image: null
+            },
+            {
+                id: "sub3",
+                author: "Sophia",
+                age: 7,
+                content: "I made a star mobile for my room! It has all the colors of the rainbow and sparkles in the light.",
+                image: "data/images/By Sophia.jpg"
+            },
+            {
+                id: "sub4",
+                author: "Noah",
+                age: 9,
+                content: "I learned about dolphins and wrote a poem about them. They're my favorite animal now!\n\nSilver laughter in the sea,\nDolphins dance where waves run free.\nMoonlight hums their secret song,\nJoy swims softly all day long.\n\nThrough the ocean blue and deep,\nThey play and leap while others sleep.\nFriends forever, side by side,\nIn the water, they will glide.",
                 image: null
             }
         ]
@@ -266,16 +471,16 @@ const FALLBACK_DATA = {
                 name: "Sarah Johnson",
                 role: "Editor-in-Chief",
                 bio: "Sarah loves creating magical stories for kids. She has been writing children's stories for over 10 years! With a degree in Children's Literature, Sarah ensures every story sparks imagination and teaches valuable lessons.",
-                image: "https://picsum.photos/300/300?random=30",
-                email: "sarah@cosmicplayground.com",
+                image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face",
+                email: "sarah@kidzmagazine.com",
                 funFact: "Sarah's favorite planet is Saturn because of its beautiful rings!"
             },
             {
                 name: "Mike Chen",
                 role: "Art Director",
                 bio: "Mike brings stories to life with beautiful illustrations. He loves drawing space adventures and friendly aliens! With 15 years of experience in digital art and animation.",
-                image: "https://picsum.photos/300/300?random=31",
-                email: "mike@cosmicplayground.com",
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+                email: "mike@kidzmagazine.com",
                 funFact: "Mike can draw a rocket in under 30 seconds!"
             }
         ]
@@ -299,6 +504,30 @@ const FALLBACK_DATA = {
                 description: "Explore the animal kingdom! Learn about dolphins, elephants, and other amazing creatures from around the world."
             }
         ]
+    },
+    jokes: {
+        jokes: [
+            {
+                question: "Why did the scarecrow win an award?",
+                answer: "Because he was outstanding in his field!"
+            },
+            {
+                question: "What do you call a bear with no teeth?",
+                answer: "A gummy bear!"
+            },
+            {
+                question: "Why don't scientists trust atoms?",
+                answer: "Because they make up everything!"
+            },
+            {
+                question: "What did zero say to eight?",
+                answer: "Nice belt!"
+            },
+            {
+                question: "Why did the math book look sad?",
+                answer: "Because it had too many problems."
+            }
+        ]
     }
 };
 
@@ -314,32 +543,53 @@ document.addEventListener('DOMContentLoaded', function () {
 function initializePage() {
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
+    // Default theme
+    setTheme('default');
+
     switch (currentPage) {
         case 'index.html':
         case '':
             loadFeaturedStories();
+            setTheme('default');
+            break;
+        case 'home_magazine.html':
+            loadFeaturedStories();
+            loadDailyFunFact();
+            loadJokeOfTheDay();
+            setTheme('science');
             break;
         case 'stories.html':
             loadStories();
+            setTheme('default');
             break;
-        case 'learning.html':
+        case 'learning.html': // Now "Science Lab"
             loadQuizzes();
             loadFunFacts();
+            setTheme('science');
             break;
-        case 'arts.html':
+        case 'arts.html': // Now "Arts & Studio"
             loadTutorials();
+            setTheme('arts');
             break;
         case 'games.html':
             loadPuzzles();
+            setTheme('default');
             break;
         case 'videos.html':
             loadVideos();
+            setTheme('default');
             break;
-        case 'nature.html':
+        case 'nature.html': // Now "Nature & Wildlife"
             loadAnimalFacts();
+            setTheme('nature');
+            break;
+        case 'history.html': // New Page
+            loadHistoryFacts();
+            setTheme('history');
             break;
         case 'kids-corner.html':
             loadSubmissions();
+            setTheme('arts');
             break;
         case 'about.html':
             loadTeamBios();
@@ -349,10 +599,107 @@ function initializePage() {
             break;
         case 'archive.html':
             loadArchive();
+            setTheme('history');
+            break;
+        case 'subscribe.html':
+            setTheme('default');
+            break;
+        case 'contact.html':
+            setTheme('default');
             break;
     }
 
     setupForms();
+}
+
+// ===== Theme Switcher Logic =====
+function setTheme(themeName) {
+    document.body.setAttribute('data-theme', themeName);
+    updateCosmicElements(themeName);
+}
+
+// Update floating elements based on theme
+function updateCosmicElements(themeName) {
+    // Clear existing elements
+    const container = document.body;
+    const existingElements = document.querySelectorAll('.star, .planet, .floating-element');
+    existingElements.forEach(el => el.remove());
+
+    if (themeName === 'nature') {
+        createNatureElements();
+    } else if (themeName === 'science') {
+        createScienceElements();
+    } else if (themeName === 'history') {
+        createHistoryElements();
+    } else if (themeName === 'arts') {
+        createArtElements();
+    } else {
+        createCosmicElements(); // Default fallback
+    }
+}
+
+function createNatureElements() {
+    const container = document.body;
+    const emojis = ['🍃', '🦋', '🌸', '🦜'];
+    for (let i = 0; i < 20; i++) {
+        const el = document.createElement('div');
+        el.className = 'floating-element';
+        el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+        el.style.left = Math.random() * 100 + '%';
+        el.style.top = Math.random() * 100 + '%';
+        el.style.fontSize = (Math.random() * 20 + 10) + 'px';
+        el.style.animation = `float ${Math.random() * 5 + 5}s infinite ease-in-out`;
+        el.style.opacity = 0.6;
+        container.appendChild(el);
+    }
+}
+
+function createScienceElements() {
+    const container = document.body;
+    const emojis = ['⚛️', '🧪', '🧬', '⚡'];
+    for (let i = 0; i < 20; i++) {
+        const el = document.createElement('div');
+        el.className = 'floating-element';
+        el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+        el.style.left = Math.random() * 100 + '%';
+        el.style.top = Math.random() * 100 + '%';
+        el.style.fontSize = (Math.random() * 20 + 10) + 'px';
+        el.style.animation = `float ${Math.random() * 5 + 5}s infinite linear`; // Different animation feel
+        el.style.opacity = 0.5;
+        container.appendChild(el);
+    }
+}
+
+function createHistoryElements() {
+    const container = document.body;
+    const emojis = ['⚙️', '⏳', '📜', '🏛️'];
+    for (let i = 0; i < 15; i++) {
+        const el = document.createElement('div');
+        el.className = 'floating-element';
+        el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+        el.style.left = Math.random() * 100 + '%';
+        el.style.top = Math.random() * 100 + '%';
+        el.style.fontSize = (Math.random() * 25 + 15) + 'px';
+        el.style.animation = `float ${Math.random() * 10 + 10}s infinite ease-in-out`; // Slower
+        el.style.opacity = 0.4;
+        container.appendChild(el);
+    }
+}
+
+function createArtElements() {
+    const container = document.body;
+    const emojis = ['🎨', '🖌️', '🖍️', '✨'];
+    for (let i = 0; i < 25; i++) {
+        const el = document.createElement('div');
+        el.className = 'floating-element';
+        el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+        el.style.left = Math.random() * 100 + '%';
+        el.style.top = Math.random() * 100 + '%';
+        el.style.fontSize = (Math.random() * 20 + 10) + 'px';
+        el.style.animation = `float ${Math.random() * 4 + 3}s infinite ease-in-out`; // Faster
+        el.style.opacity = 0.7;
+        container.appendChild(el);
+    }
 }
 
 // ===== Create Floating Cosmic Elements =====
@@ -471,6 +818,8 @@ function loadStories() {
 
         if (data && data.all) {
             container.innerHTML = '';
+
+            // Render stories in fixed order
             data.all.forEach((story, index) => {
                 const card = createStoryCard(story);
                 card.style.animationDelay = (index * 0.1) + 's';
@@ -497,27 +846,64 @@ function getImageUrl(url, defaultText, width = 400, height = 300) {
     return url;
 }
 
+// ===== Create Story Card Component =====
 function createStoryCard(story) {
-    const card = document.createElement('div');
-    card.className = 'card glass-card fade-in';
-    const authorInfo = story.author ? `<p style="color: var(--turquoise); font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>By:</strong> ${story.author}</p>` : '';
-    const readingTime = story.readingTime ? `<span style="color: var(--neon-pink); font-size: 0.9rem;">⏱️ ${story.readingTime}</span>` : '';
-    const category = story.category ? `<span style="background: var(--glass-bg); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.85rem; margin-left: 0.5rem;">${story.category}</span>` : '';
-    const imgUrl = getImageUrl(story.image, story.title || 'Cosmic Story');
-    card.innerHTML = `
-        <img src="${imgUrl}" alt="${story.title}" style="width: 100%; height: 250px; object-fit: cover;" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNmI0NmMxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPkNvc21pYyBTdG9yeTwvdGV4dD48L3N2Zz4=';">
-        <h3 class="card-title">${story.title}</h3>
-        ${authorInfo}
-        <p>${story.description}</p>
-        <div style="margin-top: auto; text-align: center;">
-            <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
-                ${readingTime}
-                ${category}
+    const col = document.createElement('div');
+    col.className = 'col-md-4 mb-4';
+
+    // Determine tag class based on category
+    let tagClass = 'tag-science'; // Default purple for Space & Sci-Fi
+    const cat = story.category ? story.category.toLowerCase() : '';
+
+    if (cat.includes('nature') || cat.includes('animals')) tagClass = 'tag-nature'; // Green
+    else if (cat.includes('history') || cat.includes('time')) tagClass = 'tag-history'; // Amber
+    else if (cat.includes('arts') || cat.includes('learning')) tagClass = 'tag-arts'; // Cyan
+    else if (cat.includes('adventure') && cat.includes('fantasy')) tagClass = 'tag-fantasy'; // Pink (we need to ensure this class exists in CSS or reuse existing ones)
+
+    // Note: If no match, it falls back to tag-science which is fine for Space/Sci-Fi. 
+    // Ideally we should add specific styles for these. For now reusing existing logic but refining it.
+    // Let's manually set style if class doesn't exist to be safe, or stick to the known classes.
+    // Known classes from previous context: tag-science, tag-nature, tag-history, tag-arts.
+    // We can map:
+    // Space & Sci-Fi -> tag-science
+    // Adventure & Fantasy -> reuse tag-arts (pinkish) or tag-history? Let's use inline style for custom colors if needed or map carefully.
+    // Actually, let's map "Adventure & Fantasy" to a specific color style since we might not have a class.
+
+    let badgeStyle = '';
+    if (story.category === 'Adventure & Fantasy') {
+        badgeStyle = 'background-color: #ec4899; color: white;'; // Pink
+        tagClass = ''; // Remove default class to use inline style
+    } else if (story.category === 'History & Time Travel') {
+        badgeStyle = 'background-color: #f59e0b; color: white;'; // Amber
+        tagClass = '';
+    } else if (story.category === 'Arts & Learning') {
+        badgeStyle = 'background-color: #06b6d4; color: white;'; // Cyan
+        tagClass = '';
+    } else if (story.category === 'Nature & Animals') {
+        badgeStyle = 'background-color: #10b981; color: white;'; // Green
+        tagClass = '';
+    } else {
+        // Space & Sci-Fi
+        badgeStyle = 'background-color: #6b46c1; color: white;'; // Purple
+        tagClass = '';
+    }
+
+    col.innerHTML = `
+        <div class="glass-card h-100 d-flex flex-column article-card">
+            <div class="article-img" style="background-image: url('${story.image}'); height: 200px; background-size: contain; background-repeat: no-repeat; background-position: center; border-radius: 15px;"></div>
+            <div class="card-body p-3 d-flex flex-column flex-grow-1">
+                <span class="tag align-self-start mb-2" style="${badgeStyle} padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">${story.category || 'Story'}</span>
+                <h3 class="card-title mb-2" style="font-size: 1.25rem;">${story.title}</h3>
+                <p class="card-text small text-muted mb-3 flex-grow-1">${story.description}</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto">
+                    <small class="text-white-50">By ${story.author}</small>
+                    <small class="text-white-50">⏱️ ${story.readingTime}</small>
+                </div>
+                <button class="btn btn-sm btn-outline-light mt-3 w-100" onclick="readStory('${story.id}')">Read Story</button>
             </div>
-            <button class="btn-cosmic" onclick="readStory('${story.id}')">Read More</button>
         </div>
     `;
-    return card;
+    return col;
 }
 
 // ===== Load Quizzes =====
@@ -665,6 +1051,52 @@ function loadFunFacts() {
     }, 'facts');
 }
 
+// ===== Load Joke of the Day =====
+function loadJokeOfTheDay() {
+    const container = document.getElementById('joke-container');
+    if (!container) return;
+
+    fetchData('data/jokes.json', function (data) {
+        if (!data || !data.jokes) {
+            // Use fallback data
+            data = FALLBACK_DATA.jokes;
+        }
+
+        if (data && data.jokes) {
+            const randomJoke = data.jokes[Math.floor(Math.random() * data.jokes.length)];
+            container.innerHTML = `
+                <div class="glass-card p-4 text-center h-100">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🤣</div>
+                    <h3 class="mb-3">Joke of the Day</h3>
+                    <p class="lead mb-3" style="font-weight: bold;">${randomJoke.question}</p>
+                    <button class="btn btn-outline-light btn-sm" onclick="this.nextElementSibling.style.display='block'; this.style.display='none';">Show Answer</button>
+                    <p class="mt-3 fade-in" style="display: none; font-size: 1.2rem; color: var(--accent-2);">${randomJoke.answer}</p>
+                </div>
+            `;
+        }
+    }, 'jokes');
+}
+
+// ===== Load Daily Fun Fact (Single) =====
+function loadDailyFunFact() {
+    const container = document.getElementById('fun-facts-container');
+    if (!container) return;
+
+    fetchData('data/facts.json', function (data) {
+        if (!data || !data.facts) {
+            data = FALLBACK_DATA.facts;
+        }
+
+        if (data && data.facts) {
+            const randomFact = data.facts[Math.floor(Math.random() * data.facts.length)];
+            container.innerHTML = `
+                <h4 class="card-title text-center mb-3">${randomFact.title}</h4>
+                <p class="text-center" style="font-size: 1.1rem;">${randomFact.content}</p>
+            `;
+        }
+    }, 'facts');
+}
+
 // ===== Load Tutorials =====
 function loadTutorials() {
     const container = document.getElementById('tutorials-container');
@@ -761,10 +1193,31 @@ function loadVideos() {
                 const card = document.createElement('div');
                 card.className = 'video-card fade-in';
                 card.style.animationDelay = (index * 0.1) + 's';
+                // Extract video ID from embedUrl
+                const videoIdMatch = video.embedUrl.match(/\/embed\/([^/?]+)/);
+                const videoId = videoIdMatch ? videoIdMatch[1] : '';
+
+                // Use custom image if available, otherwise use YouTube thumbnail
+                let thumbnailUrl = video.image;
+                if (!thumbnailUrl) {
+                    thumbnailUrl = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
+                }
+
+                const watchUrl = `https://www.youtube.com/watch?v=${videoId}`;
+
                 card.innerHTML = `
-                    <iframe src="${video.embedUrl}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div style="padding: 1rem;">
-                        <h4 class="card-title">${video.title}</h4>
+                    <div class="video-wrapper">
+                        <a href="${watchUrl}" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; height: 100%; position: relative; text-decoration: none;">
+                            <img src="${thumbnailUrl}" alt="${video.title}" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; background: rgba(236, 72, 153, 0.8); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 20px rgba(236, 72, 153, 0.6);">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 5V19L19 12L8 5Z"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <h4>${video.title}</h4>
                         <p>${video.description}</p>
                     </div>
                 `;
@@ -791,26 +1244,62 @@ function loadAnimalFacts() {
 
         if (data && data.animals) {
             container.innerHTML = '';
-            data.animals.forEach((animal, index) => {
-                const card = document.createElement('div');
-                card.className = 'card glass-card fade-in';
-                card.style.animationDelay = (index * 0.1) + 's';
-                const habitat = animal.habitat ? `<p style="margin-top: 0.5rem;"><strong>🏠 Habitat:</strong> ${animal.habitat}</p>` : '';
-                const diet = animal.diet ? `<p><strong>🍽️ Diet:</strong> ${animal.diet}</p>` : '';
-                const funFact = animal.funFact ? `<div style="background: rgba(236, 72, 153, 0.2); padding: 1rem; border-radius: 10px; margin-top: 1rem; border-left: 3px solid var(--neon-pink);"><strong>🌟 Fun Fact:</strong> ${animal.funFact}</div>` : '';
-                const imgUrl = getImageUrl(animal.image, animal.name || 'Animal');
-                card.innerHTML = `
-                    <img src="${imgUrl}" alt="${animal.name}" style="width: 100%; height: 250px; object-fit: cover;" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMDZiNmQ0Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPkFuaW1hbDwvdGV4dD48L3N2Zz4=';">
-                    <h3 class="card-title">${animal.name}</h3>
-                    <p>${animal.fact}</p>
-                    ${habitat}
-                    ${diet}
-                    <div style="margin-top: auto;">
-                        ${funFact}
-                    </div>
-                `;
-                container.appendChild(card);
+
+            // Group animals by category
+            const categories = {};
+            data.animals.forEach(animal => {
+                const cat = animal.category || 'Animals';
+                if (!categories[cat]) {
+                    categories[cat] = [];
+                }
+                categories[cat].push(animal);
             });
+
+            // Specific order: Animals, Birds, Reptiles, then others (Insects, etc.)
+            const order = ['Animals', 'Birds', 'Reptiles', 'Insects'];
+            const sortedKeys = Object.keys(categories).sort((a, b) => {
+                const indexA = order.indexOf(a);
+                const indexB = order.indexOf(b);
+                if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+                if (indexA !== -1) return -1;
+                if (indexB !== -1) return 1;
+                return a.localeCompare(b);
+            });
+
+            sortedKeys.forEach(catName => {
+                // Create section header
+                const sectionHeader = document.createElement('div');
+                sectionHeader.className = 'section-header mt-5 mb-4';
+                sectionHeader.innerHTML = `<h3 style="color: var(--turquoise); border-bottom: 2px solid var(--accent-2); padding-bottom: 0.5rem; display: inline-block;">${catName}</h3>`;
+                container.appendChild(sectionHeader);
+
+                // Create grid for this category
+                const grid = document.createElement('div');
+                grid.className = 'content-grid';
+                container.appendChild(grid);
+
+                categories[catName].forEach((animal, index) => {
+                    const card = document.createElement('div');
+                    card.className = 'card glass-card fade-in';
+                    card.style.animationDelay = (index * 0.1) + 's';
+                    const habitat = animal.habitat ? `<p style="margin-top: 0.5rem;"><strong>🏠 Habitat:</strong> ${animal.habitat}</p>` : '';
+                    const diet = animal.diet ? `<p><strong>🍽️ Diet:</strong> ${animal.diet}</p>` : '';
+                    const funFact = animal.funFact ? `<div style="background: rgba(236, 72, 153, 0.2); padding: 1rem; border-radius: 10px; margin-top: 1rem; border-left: 3px solid var(--neon-pink);"><strong>🌟 Fun Fact:</strong> ${animal.funFact}</div>` : '';
+                    const imgUrl = getImageUrl(animal.image, animal.name || 'Animal');
+                    card.innerHTML = `
+                        <img src="${imgUrl}" alt="${animal.name}" style="width: 100%; height: 250px; object-fit: cover;" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMDZiNmQ0Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPkFuaW1hbDwvdGV4dD48L3N2Zz4=';">
+                        <h3 class="card-title">${animal.name}</h3>
+                        <p>${animal.fact}</p>
+                        ${habitat}
+                        ${diet}
+                        <div style="margin-top: auto;">
+                            ${funFact}
+                        </div>
+                    `;
+                    grid.appendChild(card);
+                });
+            });
+
         } else {
             container.innerHTML = '<p style="text-align: center; padding: 2rem;">Loading animal facts...</p>';
         }
@@ -832,17 +1321,35 @@ function loadSubmissions() {
 
         if (data && data.submissions) {
             container.innerHTML = '';
-            data.submissions.forEach((submission, index) => {
+            // Limit to first 4 submissions for 2x2 grid
+            const submissionsToShow = data.submissions.slice(0, 4);
+            submissionsToShow.forEach((submission, index) => {
                 const card = document.createElement('div');
-                card.className = 'card glass-card fade-in';
+                card.className = 'card glass-card fade-in submission-card';
                 card.style.animationDelay = (index * 0.1) + 's';
+                
+                // Format age with blue outlines for each digit
+                const ageStr = submission.age.toString();
+                const ageFormatted = ageStr.split('').map(digit => 
+                    `<span style="border: 2px solid #06b6d4; border-radius: 4px; padding: 2px 4px; margin: 0 1px; display: inline-block; background: rgba(6, 182, 212, 0.1);">${digit}</span>`
+                ).join('');
+                
+                // Add Submission button only for Emma (sub1)
+                const submissionButton = submission.id === 'sub1' 
+                    ? `<button class="btn-cosmic" style="width: 100%; margin-top: 1.5rem; padding: 1rem; font-size: 1.1rem; background: #06b6d4; border: none; border-radius: 15px; color: white; cursor: pointer; font-weight: 600;">Submission</button>`
+                    : '';
+                
+                // Format content - preserve line breaks for poems
+                const formattedContent = submission.content.replace(/\n/g, '<br>');
+                
                 card.innerHTML = `
-                    <h3 class="card-title">By ${submission.author} (Age ${submission.age})</h3>
-                    <p>${submission.content}</p>
+                    <h3 class="card-title" style="color: #ec4899; font-size: 1.3rem; margin-bottom: 1rem;">By ${submission.author} (Age ${ageFormatted})</h3>
+                    <p style="font-size: 1rem; line-height: 1.6; margin-bottom: 1rem; white-space: pre-line;">${formattedContent}</p>
                     <div style="margin-top: auto;">
                         ${submission.image ? `<img src="${getImageUrl(submission.image, 'Submission')}" alt="Submission by ${submission.author}" style="margin-top: 1rem; width: 100%; border-radius: 10px; height: 250px; object-fit: cover;" onerror="this.style.display='none';">` : ''}
+                        ${submissionButton}
                     </div>
-                `;
+            `;
                 container.appendChild(card);
             });
         } else {
@@ -873,14 +1380,19 @@ function loadTeamBios() {
                 const email = member.email ? `<p class="text-center" style="font-size: 0.9rem; margin-top: 0.5rem;"><a href="mailto:${member.email}" style="color: var(--turquoise);">${member.email}</a></p>` : '';
                 const funFact = member.funFact ? `<div style="background: rgba(236, 72, 153, 0.2); padding: 1rem; border-radius: 10px; margin-top: 1rem; border-left: 3px solid var(--neon-pink);"><strong>🌟 Fun Fact:</strong> ${member.funFact}</div>` : '';
                 const imgUrl = getImageUrl(member.image, member.name || 'Team Member', 300, 300);
+                card.style.display = 'flex';
+                card.style.flexDirection = 'column';
+                card.style.height = '100%';
                 card.innerHTML = `
-                    <img src="${imgUrl}" alt="${member.name}" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover; margin: 0 auto; display: block;" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI1MCUiIGN5PSI1MCUiIHI9IjUwJSIgZmlsbD0iIzZiNDZjMSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5UZWFtPC90ZXh0Pjwvc3ZnPg==';">
-                    <h3 class="card-title text-center mt-2">${member.name}</h3>
-                    <p class="text-center" style="color: var(--turquoise); font-weight: 600;">${member.role}</p>
-                    <p class="text-center">${member.bio}</p>
-                    ${email}
-                    ${funFact}
-                `;
+                <img src="${imgUrl}" alt="${member.name}" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover; margin: 0 auto; display: block; flex-shrink: 0;" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI1MCUiIGN5PSI1MCUiIHI9IjUwJSIgZmlsbD0iIzZiNDZjMSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5UZWFtPC90ZXh0Pjwvc3ZnPg==';">
+                    <h3 class="card-title text-center mt-2" style="flex-shrink: 0;">${member.name}</h3>
+                    <p class="text-center" style="color: var(--turquoise); font-weight: 600; flex-shrink: 0;">${member.role}</p>
+                    <p class="text-center" style="flex-grow: 1; min-height: 120px; padding-top: 0.5rem; margin-bottom: 0;">${member.bio}</p>
+                    <div style="margin-top: auto; flex-shrink: 0; padding-top: 1rem;">
+                        ${email}
+                        ${funFact}
+                    </div>
+            `;
                 container.appendChild(card);
             });
         } else {
@@ -912,10 +1424,10 @@ function loadVisionContent() {
             valuesHTML = '<div class="glass-card p-2 mt-2"><h2>Our Values</h2><div class="content-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">';
             data.values.forEach(value => {
                 valuesHTML += `
-                    <div class="card glass-card">
+                < div class="card glass-card" >
                         <h4 class="card-title">${value.title}</h4>
                         <p>${value.description}</p>
-                    </div>
+                    </div >
                 `;
             });
             valuesHTML += '</div></div>';
@@ -925,7 +1437,7 @@ function loadVisionContent() {
         if (data.goals && data.goals.length > 0) {
             goalsHTML = '<div class="glass-card p-2 mt-2"><h2>Our Goals</h2><ul style="font-size: 1.1rem; line-height: 2;">';
             data.goals.forEach(goal => {
-                goalsHTML += `<li>${goal}</li>`;
+                goalsHTML += `< li > ${goal}</li > `;
             });
             goalsHTML += '</ul></div>';
         }
@@ -936,28 +1448,28 @@ function loadVisionContent() {
             Object.keys(data.impact).forEach(key => {
                 const label = key.charAt(0).toUpperCase() + key.slice(1);
                 impactHTML += `
-                    <div class="card glass-card text-center">
+                < div class="card glass-card text-center" >
                         <h3 style="font-size: 2rem; color: var(--neon-pink);">${data.impact[key]}</h3>
                         <p>${label}</p>
-                    </div>
+                    </div >
                 `;
             });
             impactHTML += '</div></div>';
         }
 
         container.innerHTML = `
-            <div class="glass-card p-2">
+                < div class="glass-card p-2" >
                 <h2>Our Vision</h2>
                 <p style="font-size: 1.1rem;">${data.vision || 'To inspire and educate children through cosmic adventures and magical stories.'}</p>
-            </div>
-            <div class="glass-card p-2 mt-2">
-                <h2>Our Mission</h2>
-                <p style="font-size: 1.1rem;">${data.mission || 'To create engaging, educational content that sparks curiosity and imagination in young minds.'}</p>
-            </div>
+            </div >
+                <div class="glass-card p-2 mt-2">
+                    <h2>Our Mission</h2>
+                    <p style="font-size: 1.1rem;">${data.mission || 'To create engaging, educational content that sparks curiosity and imagination in young minds.'}</p>
+                </div>
             ${valuesHTML}
             ${goalsHTML}
             ${impactHTML}
-        `;
+            `;
     });
 }
 
@@ -981,11 +1493,11 @@ function loadArchive() {
                 card.className = 'card glass-card fade-in';
                 card.style.animationDelay = (index * 0.1) + 's';
                 card.innerHTML = `
-                    <h3 class="card-title">${issue.title}</h3>
+                < h3 class="card-title" > ${issue.title}</h3 >
                     <p><strong>Date:</strong> ${issue.date}</p>
                     <p>${issue.description}</p>
                     <button class="btn-cosmic mt-2" onclick="viewIssue('${issue.id}')">View Issue</button>
-                `;
+            `;
                 container.appendChild(card);
             });
         } else {
@@ -1017,13 +1529,47 @@ function setupForms() {
     if (subscribeForm) {
         subscribeForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            const email = document.getElementById('subscribe-email').value;
+            const formData = new FormData(subscribeForm);
+            const data = Object.fromEntries(formData);
+            
+            // Validate interests (at least one should be selected)
+            const interests = formData.getAll('interests');
+            if (interests.length === 0) {
+                alert('Please select at least one content preference.');
+                return;
+            }
+
+            // Validate age
+            const age = parseInt(data.age);
+            if (isNaN(age) || age < 3 || age > 18) {
+                alert('Please enter a valid age between 3 and 18.');
+                return;
+            }
+
+            // Show loading state
+            const submitBtn = subscribeForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.textContent;
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Subscribing...';
 
             // Simulate AJAX submission
             setTimeout(() => {
-                alert('Thank you for subscribing! Check your email for confirmation.');
+                // Hide form and show success message
+                subscribeForm.style.display = 'none';
+                const successMsg = document.getElementById('subscribe-success');
+                if (successMsg) {
+                    successMsg.style.display = 'block';
+                    // Scroll to success message
+                    successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else {
+                    alert('Thank you for subscribing! Check your email for confirmation.');
+                }
+                
+                // Reset form (but keep it hidden)
                 subscribeForm.reset();
-            }, 500);
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalBtnText;
+            }, 1000);
         });
     }
 
@@ -1038,7 +1584,7 @@ function setupForms() {
             // Simulate AJAX validation
             setTimeout(() => {
                 if (username && password) {
-                    alert('Login successful! Welcome to Cosmic Playground!');
+                    alert('Login successful! Welcome to Kidz Magazine!');
                     loginForm.reset();
                 } else {
                     alert('Please fill in all fields.');
@@ -1057,11 +1603,48 @@ function setupForms() {
 
             // Simulate AJAX registration
             setTimeout(() => {
-                alert('Registration successful! Welcome to Cosmic Playground!');
+                alert('Registration successful! Welcome to Kidz Magazine!');
                 registerForm.reset();
             }, 500);
         });
     }
+}
+
+// ===== Load History Facts =====
+function loadHistoryFacts() {
+    const container = document.getElementById('history-container');
+    if (!container) return;
+
+    container.innerHTML = '<div class="loader"></div>';
+
+    fetchData('data/history.json', function (data) {
+        if (!data || !data.facts) {
+            // Use fallback data
+            data = FALLBACK_DATA.history;
+        }
+
+        if (!data || !data.facts) {
+            container.innerHTML = '<p style="text-align: center; padding: 2rem;">Discovering history...</p>';
+            return;
+        }
+
+        if (data && data.facts) {
+            container.innerHTML = '';
+            data.facts.forEach((fact, index) => {
+                const card = document.createElement('div');
+                card.className = 'card glass-card fade-in';
+                card.style.animationDelay = (index * 0.1) + 's';
+                card.style.backgroundColor = 'rgba(62, 39, 35, 0.4)'; // Darker parchment style
+                const yearBadge = fact.year ? `<span style="display:inline-block; margin-top:auto; padding:0.2rem 0.5rem; background:rgba(0,0,0,0.3); border-radius:5px; font-size:0.8rem; color: var(--accent-2);">📅 ${fact.year}</span>` : '';
+                card.innerHTML = `
+                    <h4 class="card-title" style="color: var(--accent-2);">${fact.title}</h4>
+                    <p>${fact.content}</p>
+                    ${yearBadge}
+                `;
+                container.appendChild(card);
+            });
+        }
+    }, 'history');
 }
 
 // ===== Setup Navigation =====
@@ -1096,21 +1679,21 @@ function setupParallax() {
 
 // ===== Utility Functions =====
 function readStory(storyId) {
-    alert(`Opening story: ${storyId}`);
+    alert(`Opening story: ${storyId} `);
     // In a real app, this would navigate to a story detail page
 }
 
 function viewTutorial(tutorialId) {
-    alert(`Opening tutorial: ${tutorialId}`);
+    alert(`Opening tutorial: ${tutorialId} `);
     // In a real app, this would show tutorial details
 }
 
 function playPuzzle(puzzleId) {
-    alert(`Starting puzzle: ${puzzleId}`);
+    alert(`Starting puzzle: ${puzzleId} `);
     // In a real app, this would load the puzzle game
 }
 
 function viewIssue(issueId) {
-    alert(`Opening issue: ${issueId}`);
+    alert(`Opening issue: ${issueId} `);
     // In a real app, this would show the full issue
 }

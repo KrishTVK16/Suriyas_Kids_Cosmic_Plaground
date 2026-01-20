@@ -2,75 +2,93 @@
   "animals": [
     {
       "name": "Dolphin",
+      "category": "Animals",
       "fact": "Dolphins are super smart! They can recognize themselves in mirrors and have their own names. They use echolocation to 'see' with sound, sending out clicks that bounce off objects to help them navigate and find food.",
-      "image": "https://images.unsplash.com/photo-1607153333879-c174d265f1d2?w=400&h=300&fit=crop&q=80",
+      "image": "https://images.unsplash.com/photo-1607153333879-c174d265f1d2?w=800&q=80",
       "habitat": "Oceans worldwide",
       "diet": "Fish and squid",
       "funFact": "Dolphins sleep with one eye open!"
     },
     {
       "name": "Elephant",
-      "fact": "Elephants never forget! They have amazing memories and can remember friends for many years. They're also the largest land animals and can communicate using sounds too low for humans to hear.",
-      "image": "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=400&h=300&fit=crop&q=80",
+      "category": "Animals",
+      "fact": "Elephants never forget! They have amazing memories and can remember friends for many years. They are the largest land animals.",
+      "image": "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=800&q=80",
       "habitat": "Africa and Asia",
       "diet": "Plants, fruits, and bark",
       "funFact": "Elephants can smell water from 3 miles away!"
     },
     {
-      "name": "Penguin",
-      "fact": "Penguins can't fly, but they are amazing swimmers! They can dive deep into the ocean and hold their breath for up to 20 minutes. They also huddle together to stay warm in freezing temperatures.",
-      "image": "https://images.unsplash.com/photo-1551986782-d0169b3f8fa7?w=400&h=300&fit=crop&q=80",
-      "habitat": "Antarctica and surrounding areas",
-      "diet": "Fish, krill, and squid",
-      "funFact": "Penguins can jump 6 feet out of the water!"
-    },
-    {
-      "name": "Butterfly",
-      "fact": "Butterflies taste with their feet! They have taste sensors on their feet to find food. They can see ultraviolet light and migrate thousands of miles. Some butterflies can fly up to 30 miles per hour!",
-      "image": "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=400&h=300&fit=crop&q=80",
-      "habitat": "Worldwide, especially gardens",
-      "diet": "Nectar from flowers",
-      "funFact": "Butterflies have four wings, not two!"
-    },
-    {
-      "name": "Octopus",
-      "fact": "Octopuses have three hearts and blue blood! They are also super smart and can solve puzzles. They can change color and texture to blend in with their surroundings, making them amazing at hiding.",
-      "image": "https://images.unsplash.com/photo-1547716752-9a0331effbef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8b2N0b3B1c3xlbnwwfHwwfHx8MA%3D%3D",
-      "habitat": "Oceans worldwide",
-      "diet": "Crabs, fish, and other sea creatures",
-      "funFact": "Octopuses have 9 brains - one central brain and 8 mini-brains in each arm!"
+      "name": "Tiger",
+      "category": "Animals",
+      "fact": "Tigers are the largest cats in the world! Each tiger has unique stripes, just like human fingerprints. They love swimming!",
+      "image": "data/images/nature/Tiger2.jfif",
+      "habitat": "Asia",
+      "diet": "Meat",
+      "funFact": "A tiger's roar can be heard from 2 miles away!"
     },
     {
       "name": "Giraffe",
-      "fact": "Giraffes have super long necks! They only need to sleep for about 30 minutes a day, usually in short naps. Their long necks help them reach leaves high up in trees that other animals can't reach.",
-      "image": "https://plus.unsplash.com/premium_photo-1661810398337-1fddd20130c3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8R2lyYWZmZXxlbnwwfHwwfHx8MA%3D%3D",
+      "category": "Animals",
+      "fact": "Giraffes have super long necks to reach high leaves. They only need to sleep for about 30 minutes a day!",
+      "image": "https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=800&q=80",
       "habitat": "African savannas",
-      "diet": "Leaves from acacia trees",
-      "funFact": "A giraffe's tongue is 20 inches long and is blue-black in color!"
+      "diet": "Leaves",
+      "funFact": "A giraffe's tongue is blue-black!"
     },
     {
-      "name": "Polar Bear",
-      "fact": "Polar bears are the largest land carnivores! They have black skin under their white fur to absorb heat from the sun. They're excellent swimmers and can swim for days without stopping.",
-      "image": "https://images.unsplash.com/photo-1589656966895-2f33e7653819?w=400&h=300&fit=crop&q=80",
-      "habitat": "Arctic regions",
-      "diet": "Seals and fish",
-      "funFact": "Polar bears can smell a seal from 20 miles away!"
+      "name": "Penguin",
+      "category": "Birds",
+      "fact": "Penguins can't fly, but they are amazing swimmers! They can dive deep into the ocean and hold their breath for up to 20 minutes.",
+      "image": "https://images.unsplash.com/photo-1598439210625-5067c578f3f6?w=800&q=80",
+      "habitat": "Antarctica",
+      "diet": "Fish and krill",
+      "funFact": "Penguins can jump 6 feet out of the water!"
     },
     {
-      "name": "Kangaroo",
-      "fact": "Kangaroos can't walk backwards! They hop on their powerful hind legs and use their tail for balance. Baby kangaroos, called joeys, live in their mother's pouch for about 6 months.",
-      "image": "https://images.unsplash.com/photo-1526515920271-2d8fc77ab015?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGthbmdhcm9vfGVufDB8fDB8fHww",
-      "habitat": "Australia",
-      "diet": "Grass and plants",
-      "funFact": "Kangaroos can jump up to 30 feet in one leap!"
+      "name": "Parrot",
+      "category": "Birds",
+      "fact": "Parrots are colorful birds that can mimic human speech. They lived in tropical rainforests.",
+      "image": "https://images.unsplash.com/photo-1452570053594-1b985d6ea890?w=800&q=80",
+      "habitat": "Rainforests",
+      "diet": "Fruits and seeds",
+      "funFact": "Some parrots live for 80 years!"
     },
     {
-      "name": "Tiger",
-      "fact": "Tigers are the largest cats in the world! Each tiger has unique stripes, just like human fingerprints. They're excellent swimmers and love water, unlike most cats. Tigers can run up to 40 miles per hour!",
-      "image": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=400&h=300&fit=crop&q=80",
-      "habitat": "Asia (forests and grasslands)",
-      "diet": "Deer, wild boar, and other animals",
-      "funFact": "A tiger's roar can be heard from 2 miles away!"
+      "name": "Butterfly",
+      "category": "Insects",
+      "fact": "Butterflies taste with their feet! They migrate thousands of miles and help pollinate flowers.",
+      "image": "https://images.unsplash.com/photo-1475724017904-b712052c192a?w=800&q=80",
+      "habitat": "Gardens",
+      "diet": "Nectar",
+      "funFact": "Butterflies have four wings!"
+    },
+    {
+      "name": "Ladybug",
+      "category": "Insects",
+      "fact": "Ladybugs are small beetles that are often red with black spots. They help farmers by eating microscopic pests.",
+      "image": "data/images/nature/LadyBug.jfif",
+      "habitat": "Gardens and fields",
+      "diet": "Aphids",
+      "funFact": "Ladybugs hibernate in winter!"
+    },
+    {
+      "name": "Turtle",
+      "category": "Reptiles",
+      "fact": "Turtles have a hard shell that protects them like a shield. Sea turtles spend most of their lives in the ocean.",
+      "image": "data/images/nature/Turtule.webp",
+      "habitat": "Oceans",
+      "diet": "Jellyfish",
+      "funFact": "Turtles can live for 100 years!"
+    },
+    {
+      "name": "Chameleon",
+      "category": "Reptiles",
+      "fact": "Chameleons can change color to blend in or show their mood! Their eyes move independently.",
+      "image": "data/images/nature/Chameleon.avif",
+      "habitat": "Rainforests",
+      "diet": "Insects",
+      "funFact": "Their tongue is longer than their body!"
     }
   ]
 }

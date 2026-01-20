@@ -1,0 +1,34 @@
+{
+  "facts": [
+    {
+      "title": "The Great Pyramids",
+      "content": "The Great Pyramid of Giza is the oldest of the Seven Wonders of the Ancient World, and the only one to remain largely intact. It was built as a tomb for the Pharaoh Khufu.",
+      "year": "2560 BC"
+    },
+    {
+      "title": "First Moon Landing",
+      "content": "On July 20, 1969, Neil Armstrong became the first human to step onto the surface of the Moon. His first words were 'That's one small step for man, one giant leap for mankind.'",
+      "year": "1969"
+    },
+    {
+      "title": "The Dinosaurs",
+      "content": "Dinosaurs ruled the Earth for about 165 million years! They went extinct about 65 million years ago, likely due to a giant asteroid impact.",
+      "year": "65 Million Years Ago"
+    },
+    {
+      "title": "The Great Wall of China",
+      "content": "The Great Wall of China is the longest wall in the world, stretching over 13,000 miles! It was built over many centuries to protect China from invaders.",
+      "year": "7th Century BC - 1644 AD"
+    },
+    {
+      "title": "Wright Brothers' First Flight",
+      "content": "Orville and Wilbur Wright made the first controlled, sustained flight of a powered, heavier-than-air aircraft. Their flight lasted only 12 seconds but changed the world forever!",
+      "year": "1903"
+    },
+    {
+      "title": "Invention of the Wheel",
+      "content": "The wheel was invented in Mesopotamia (modern-day Iraq) and is considered one of the most important inventions in human history. It revolutionized transport and pottery.",
+      "year": "3500 BC"
+    }
+  ]
+}

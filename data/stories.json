@@ -1,69 +1,87 @@
 {
   "featured": [
     {
-      "id": "story1",
-      "title": "The Cosmic Adventure of Luna",
-      "description": "Join Luna as she travels through the galaxy meeting friendly aliens and discovering new planets! Follow her journey as she learns about friendship, courage, and the wonders of space. Perfect for ages 6-10.",
-      "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=400&h=300&fit=crop&q=80",
-      "author": "Sarah Johnson",
-      "readingTime": "5 min read",
-      "category": "Space Adventure"
-    },
-    {
       "id": "story2",
       "title": "Stardust and the Magic Rocket",
       "description": "Stardust finds a magical rocket that takes them to the edge of the universe! Discover what happens when they meet the Star Guardians and learn about the power of dreams. An inspiring tale for young explorers.",
-      "image": "https://images.unsplash.com/photo-1484589065579-248aad0d8b13?w=400&h=300&fit=crop&q=80",
+      "image": "Star Dust and Magic Rocket.png",
       "author": "Mike Chen",
       "readingTime": "7 min read",
-      "category": "Fantasy"
+      "category": "Adventure & Fantasy"
     },
     {
       "id": "story3",
       "title": "The Planet of Colors",
       "description": "Discover a planet where everything is made of colors and music! Join the Color Crew as they solve mysteries and bring harmony to their vibrant world. A fun and educational story about colors and creativity.",
-      "image": "https://images.unsplash.com/photo-1534361960057-19889db9621e?w=400&h=300&fit=crop&q=80",
+      "image": "Planet Of Colors.png",
       "author": "Emma Williams",
       "readingTime": "6 min read",
       "category": "Educational"
+    },
+    {
+      "id": "story_arts_new_1",
+      "title": "The Melody Maker",
+      "description": "In a world without sound, one girl discovers the magic of music. Follow her journey as she brings melody back to her village.",
+      "image": "The Melody Maker.png",
+      "author": "Melody Tune",
+      "readingTime": "5 min read",
+      "category": "Arts & Learning"
     }
   ],
   "all": [
     {
-      "id": "story1",
-      "title": "The Cosmic Adventure of Luna",
-      "description": "Join Luna as she travels through the galaxy meeting friendly aliens and discovering new planets!",
-      "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=400&h=300&fit=crop&q=80",
-      "author": "Sarah Johnson",
-      "readingTime": "5 min read",
-      "category": "Space Adventure"
-    },
-    {
       "id": "story2",
       "title": "Stardust and the Magic Rocket",
-      "description": "Stardust finds a magical rocket that takes them to the edge of the universe!",
-      "image": "https://images.unsplash.com/photo-1484589065579-248aad0d8b13?w=400&h=300&fit=crop&q=80",
+      "description": "Stardust finds a magical rocket that takes them to the edge of the universe! Discover what happens when they meet the Star Guardians and learn about the power of dreams. An inspiring tale for young explorers.",
+      "image": "Star Dust and Magic Rocket.png",
       "author": "Mike Chen",
       "readingTime": "7 min read",
-      "category": "Fantasy"
+      "category": "Adventure & Fantasy"
     },
     {
       "id": "story3",
       "title": "The Planet of Colors",
-      "description": "Discover a planet where everything is made of colors and music!",
-      "image": "https://images.unsplash.com/photo-1534361960057-19889db9621e?w=400&h=300&fit=crop&q=80",
+      "description": "Discover a planet where everything is made of colors and music! Join the Color Crew as they solve mysteries and bring harmony to their vibrant world. A fun and educational story about colors and creativity.",
+      "image": "Planet Of Colors.png",
       "author": "Emma Williams",
       "readingTime": "6 min read",
-      "category": "Educational"
+      "category": "Arts & Learning"
     },
     {
-      "id": "story4",
-      "title": "Comet's Journey Home",
-      "description": "Follow Comet as they race through space to get home before bedtime! A heartwarming story about family, time, and the importance of being home. Perfect bedtime reading for ages 6-8.",
-      "image": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=400&h=300&fit=crop&q=80",
-      "author": "David Martinez",
-      "readingTime": "4 min read",
-      "category": "Bedtime Story"
+      "id": "story_nature_2",
+      "title": "Whispers of the Ocean",
+      "description": "Dive deep with Maya the Mermaid as she discovers the importance of keeping our oceans clean. A beautiful story about marine life and conservation.",
+      "image": "Whispers of the Ocean.jpg",
+      "author": "Ocean Blue",
+      "readingTime": "6 min read",
+      "category": "Nature & Animals"
+    },
+    {
+      "id": "story_adventure_new_1",
+      "title": "The Crystal Cave",
+      "description": "Join Alex and Sam as they discover a hidden cave filled with glowing crystals! A magical journey about bravery and friendship.",
+      "image": "The Crystal Cave 2.jpg",
+      "author": "Adventure Seeker",
+      "readingTime": "6 min read",
+      "category": "Adventure & Fantasy"
+    },
+    {
+      "id": "story_arts_new_1",
+      "title": "The Melody Maker",
+      "description": "In a world without sound, one girl discovers the magic of music. Follow her journey as she brings melody back to her village.",
+      "image": "The Melody Maker.png",
+      "author": "Melody Tune",
+      "readingTime": "5 min read",
+      "category": "Arts & Learning"
+    },
+    {
+      "id": "story_arts_1",
+      "title": "The Magic Paintbrush",
+      "description": "Everything Li paints comes to life! But what happens when he loses his magic brush? A touching story about creativity and believing in yourself.",
+      "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&h=300&fit=crop&q=80",
+      "author": "Arty Brush",
+      "readingTime": "5 min read",
+      "category": "Arts & Learning"
     },
     {
       "id": "story5",
@@ -72,43 +90,16 @@
       "image": "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?w=400&h=300&fit=crop&q=80",
       "author": "Sarah Johnson",
       "readingTime": "8 min read",
-      "category": "Science Fiction"
+      "category": "Space & Sci-Fi"
     },
     {
-      "id": "story6",
-      "title": "Nebula's Secret",
-      "description": "Uncover the secret hidden within the beautiful nebula clouds! Join a team of young space explorers as they discover the mysteries of cosmic clouds and learn about space science.",
-      "image": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=400&h=300&fit=crop&q=80",
-      "author": "Mike Chen",
-      "readingTime": "6 min read",
-      "category": "Adventure"
-    },
-    {
-      "id": "story7",
-      "title": "The Friendly Alien",
-      "description": "When Zara meets an alien from another planet, they become best friends! A story about friendship, acceptance, and learning from others who are different from us.",
-      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop&q=80",
-      "author": "Emma Williams",
+      "id": "story_nature_1",
+      "title": "The Jungle Orchestra",
+      "description": "Deep in the rainforest, the animals are preparing for the biggest concert of the year! Learn about different jungle animals and the sounds they make in this musical adventure.",
+      "image": "https://images.unsplash.com/photo-1534567153574-2b12153a87f0?w=400&h=300&fit=crop&q=80",
+      "author": "Leo Wild",
       "readingTime": "5 min read",
-      "category": "Friendship"
-    },
-    {
-      "id": "story8",
-      "title": "Moon's Magic Garden",
-      "description": "Discover a secret garden on the moon where magical plants grow! Learn about plants, gardening, and the importance of taking care of nature.",
-      "image": "https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?w=400&h=300&fit=crop&q=80",
-      "author": "Sarah Johnson",
-      "readingTime": "7 min read",
-      "category": "Nature"
-    },
-    {
-      "id": "story9",
-      "title": "The Time-Traveling Telescope",
-      "description": "A magical telescope that shows the past and future! Join Alex as they learn about history, the future, and the importance of living in the present moment.",
-      "image": "https://images.unsplash.com/photo-1532693322450-2cb5c511067d?w=400&h=300&fit=crop&q=80",
-      "author": "David Martinez",
-      "readingTime": "9 min read",
-      "category": "Time Travel"
+      "category": "Nature & Animals"
     }
   ]
 }

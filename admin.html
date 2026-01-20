@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Kidz Magazine</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Fredoka+One&family=Poppins:wght@300;400;600&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .admin-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 2rem;
+            color: white;
+            transition: transform 0.3s ease;
+        }
+
+        .admin-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--accent-1);
+        }
+
+        .admin-nav {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .admin-nav a {
+            color: white;
+            margin-right: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .admin-nav a:hover {
+            color: var(--accent-1);
+        }
+    </style>
+</head>
+
+<body data-theme="science">
+    <!-- Navbar will be auto-updated by script, but adding placeholder -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-icon">🌟</span>
+                <span class="logo-text">
+                    <span class="logo-line1">Kidz</span>
+                    <span class="logo-line2">Magazine</span>
+                </span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="admin-nav d-flex justify-content-between align-items-center">
+            <div>
+                <a href="admin.html">📊 Dashboard</a>
+                <!--<a href="stories.html">📝 Stories</a>-->
+                <a href="#users-section">👥 Users</a>
+                <a href="#settings-section">⚙️ Settings</a>
+            </div>
+            <button class="btn btn-sm btn-outline-danger" onclick="window.location.href='index.html'">Logout</button>
+        </div>
+
+        <h2 class="mb-4 glow-text">Admin Dashboard</h2>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="admin-card text-center">
+                    <div class="stat-number">1,245</div>
+                    <p>Active Readers</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="admin-card text-center">
+                    <div class="stat-number">42</div>
+                    <p>New Stories</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="admin-card text-center">
+                    <div class="stat-number">15</div>
+                    <p>Pending Submissions</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-8">
+                <div class="glass p-4">
+                    <h4>Recent Activity</h4>
+                    <table class="table table-dark table-hover mt-3" style="background: transparent;">
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Action</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SuperKid99</td>
+                                <td>Completed "Space Quiz"</td>
+                                <td>5 mins ago</td>
+                            </tr>
+                            <tr>
+                                <td>ArtMaster</td>
+                                <td>Submitted a drawing</td>
+                                <td>12 mins ago</td>
+                            </tr>
+                            <tr>
+                                <td>ScienceWhiz</td>
+                                <td>Read "Volcano Facts"</td>
+                                <td>1 hour ago</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="glass p-4">
+                    <h4>Quick Actions</h4>
+                    <button class="btn btn-cosmic w-100 mb-3">✍️ Write New Story</button>
+                    <button class="btn btn-cosmic w-100 mb-3">📢 Post Announcement</button>
+                    <button class="btn btn-cosmic w-100">🛡️ Moderate Comments</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Users Section -->
+        <div id="users-section" class="row mt-5">
+            <div class="col-12">
+                <div class="admin-card">
+                    <h3 class="mb-4 glow-text">👥 User Management</h3>
+                    <div class="table-responsive">
+                        <table class="table table-dark table-hover" style="background: transparent;">
+                            <thead>
+                                <tr>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th>Role</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SuperKid99</td>
+                                    <td>superkid@example.com</td>
+                                    <td>Reader</td>
+                                    <td><span class="badge bg-success">Active</span></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ArtMaster</td>
+                                    <td>artmaster@example.com</td>
+                                    <td>Contributor</td>
+                                    <td><span class="badge bg-success">Active</span></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ScienceWhiz</td>
+                                    <td>science@example.com</td>
+                                    <td>Reader</td>
+                                    <td><span class="badge bg-warning">Pending</span></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings Section -->
+        <div id="settings-section" class="row mt-5">
+            <div class="col-md-6">
+                <div class="admin-card">
+                    <h3 class="mb-4 glow-text">⚙️ General Settings</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Site Name</label>
+                            <input type="text" class="form-control bg-dark text-white" value="Kidz Magazine">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Site Description</label>
+                            <textarea class="form-control bg-dark text-white" rows="3">A magical cosmic-themed kids magazine</textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Admin Email</label>
+                            <input type="email" class="form-control bg-dark text-white" value="admin@kidzmagazine.com">
+                        </div>
+                        <button type="submit" class="btn btn-cosmic">Save Settings</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="admin-card">
+                    <h3 class="mb-4 glow-text">🔒 Security Settings</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Change Password</label>
+                            <input type="password" class="form-control bg-dark text-white" placeholder="New Password">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control bg-dark text-white" placeholder="Confirm Password">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="twoFactor" checked>
+                            <label class="form-check-label" for="twoFactor">Enable Two-Factor Authentication</label>
+                        </div>
+                        <button type="submit" class="btn btn-cosmic">Update Security</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -47,7 +47,14 @@
     {
       "title": "Cool Human Body Fact",
       "content": "Your brain uses about 20% of your body's energy even though it's only 2% of your body weight! Your brain is always working, even when you're sleeping, processing information and storing memories."
+    },
+    {
+      "title": "Fun Water Fact",
+      "content": "Hot water freezes faster than cold water! This phenomenon is known as the Mpemba effect. Scientists are still figuring out exactly why this happens!"
+    },
+    {
+      "title": "Space Sound Fact",
+      "content": "Space is completely silent. Because there is no atmosphere (air) in space, sound waves have no medium to travel through. That means no one can hear you scream in space!"
     }
   ]
 }
-

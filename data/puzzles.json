@@ -29,6 +29,26 @@
       "id": "puzzle6",
       "title": "Animal Memory Game",
       "description": "Match pairs of animals in this fun memory game!"
+    },
+    {
+      "id": "game1",
+      "title": "Space Jump",
+      "description": "Jump from planet to planet and collect stars!"
+    },
+    {
+      "id": "game2",
+      "title": "Math Blaster",
+      "description": "Solve math problems to fuel your rocket ship!"
+    },
+    {
+      "id": "game3",
+      "title": "Color Matcher",
+      "description": "Match the falling colors to the buckets below!"
+    },
+    {
+      "id": "game4",
+      "title": "Shape Sorter",
+      "description": "Fit the shapes into the correct holes before time runs out!"
     }
   ]
 }

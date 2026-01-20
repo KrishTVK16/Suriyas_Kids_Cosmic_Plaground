@@ -2,39 +2,40 @@
   "videos": [
     {
       "id": "video1",
-      "title": "Journey Through the Solar System",
-      "description": "Take an amazing journey through our solar system!",
-      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      "title": "Solar System 101",
+      "description": "Explore our amazing solar system with National Geographic!",
+      "embedUrl": "https://www.youtube.com/embed/libKVRa01L8"
     },
     {
       "id": "video2",
-      "title": "Fun Animal Facts",
-      "description": "Learn amazing facts about animals from around the world!",
-      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      "title": "The Animal Kingdom",
+      "description": "Learn about mammals, birds, fish, and more!",
+      "embedUrl": "https://www.youtube.com/embed/mRidGna-V4E"
     },
     {
       "id": "video3",
-      "title": "How to Draw a Rocket",
-      "description": "Follow along and learn how to draw a cool rocket!",
-      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      "title": "Learn Colors with Balloons",
+      "description": "A fun animation to learn all the colors of the rainbow!",
+      "embedUrl": "https://www.youtube.com/embed/pUPM3DtK9so"
     },
     {
       "id": "video4",
-      "title": "The Magic of Colors",
-      "description": "Discover the magic of mixing colors and creating art!",
-      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      "title": "Lifecycle of a Butterfly",
+      "description": "Watch how a caterpillar turns into a beautiful butterfly.",
+      "embedUrl": "https://www.youtube.com/embed/O1S8WzwLPlM"
     },
     {
       "id": "video5",
-      "title": "Space Songs for Kids",
-      "description": "Sing along to fun songs about space and planets!",
-      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      "title": "Seven Continents Song",
+      "description": "Sing along and learn about the seven continents of the world!",
+      "embedUrl": "https://www.youtube.com/embed/K6DSMZ8b3LE"
     },
     {
       "id": "video6",
-      "title": "Nature Adventure",
-      "description": "Explore nature and learn about plants and animals!",
-      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      "title": "Deep Ocean Creatures",
+      "description": "Dive deep and discover the strange creatures of the deep sea.",
+      "embedUrl": "https://www.youtube.com/embed/U9zZtiV31Z0",
+      "image": "https://images.unsplash.com/photo-1682687982501-1e58ab814714?q=80&w=2070&auto=format&fit=crop"
     }
   ]
 }
