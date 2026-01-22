@@ -503,6 +503,63 @@ h6 {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28248, 250, 252, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+/* Header Button Styles */
+.btn-header-admin,
+.btn-header-login,
+.btn-header-signup {
+    background: linear-gradient(135deg, var(--neon-pink), var(--turquoise));
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    color: white !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(236, 72, 153, 0.4);
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    margin: 0 0.25rem;
+}
+
+.btn-header-admin:hover,
+.btn-header-login:hover,
+.btn-header-signup:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(236, 72, 153, 0.6);
+    color: white !important;
+    text-decoration: none;
+}
+
+.btn-header-admin:active,
+.btn-header-login:active,
+.btn-header-signup:active {
+    transform: translateY(-1px);
+}
+
+.btn-header-admin::before,
+.btn-header-login::before,
+.btn-header-signup::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn-header-admin:hover::before,
+.btn-header-login:hover::before,
+.btn-header-signup:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
 /* ===== Hero Section ===== */
 .hero {
     min-height: 80vh;
@@ -1155,6 +1212,15 @@ h6 {
         word-break: normal;
         overflow-wrap: normal;
         line-height: 1.2;
+    }
+
+    /* Header buttons responsive styles */
+    .btn-header-admin,
+    .btn-header-login,
+    .btn-header-signup {
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+        margin: 0 0.1rem;
     }
 }
 

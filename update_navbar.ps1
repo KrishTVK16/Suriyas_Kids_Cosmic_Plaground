@@ -53,14 +53,14 @@ $newNavbar = @"
                         <li><a class="dropdown-item" href="contact.html">📞 Contact</a></li>
                     </ul>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="mySpaceDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">👤 MY Space</a>
-                    <ul class="dropdown-menu" aria-labelledby="mySpaceDropdown">
-                        <li><a class="dropdown-item" href="admin.html">🔒 Admin</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="login.html">🔑 Login</a></li>
-                        <li><a class="dropdown-item" href="register.html">✨ Sign Up</a></li>
-                    </ul>
+                <li class="nav-item">
+                    <a class="nav-link btn-header-admin" href="admin.html">🔒 Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn-header-login" href="login.html">🔑 Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn-header-signup" href="register.html">✨ Sign Up</a>
                 </li>
             </ul>
         </div>
