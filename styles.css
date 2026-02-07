@@ -2649,13 +2649,13 @@ h6 {
 }
 
 /* Ensure bio paragraph takes available space */
-#team-container .card > p.text-center:not([style*="color: var(--turquoise)"]) {
+#team-container .card>p.text-center:not([style*="color: var(--turquoise)"]) {
     flex-grow: 1;
     min-height: 120px;
 }
 
 /* Ensure email and fun fact section stays at bottom */
-#team-container .card > div[style*="margin-top: auto"] {
+#team-container .card>div[style*="margin-top: auto"] {
     margin-top: auto !important;
     flex-shrink: 0;
 }
