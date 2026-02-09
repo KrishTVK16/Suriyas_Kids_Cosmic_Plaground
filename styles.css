@@ -1415,9 +1415,11 @@ h6 {
 /* ===== Video Gallery ===== */
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: 2rem;
     padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .video-card {
